@@ -1,14 +1,33 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  var toggle_underscore = setInterval(function(){
-    if($("#underscored").is(":visible")){
-      $('#underscored').hide();
-    }else {
-      $('#underscored').show();
-    }
+  jQuery.fn.visible = function() {
+      return this.css('visibility', 'visible');
+  };
 
-  }, 1000);
+  jQuery.fn.invisible = function() {
+      return this.css('visibility', 'hidden');
+  };
+
+  jQuery.fn.visibilityToggle = function() {
+      return this.css('visibility', function(i, visibility) {
+          return (visibility == 'visible') ? 'hidden' : 'visible';
+      });
+  };
+
+  var toggle_visibility = setInterval(function(){
+    $("#abt_underscore").visibilityToggle();
+    $("#attn_underscore").visibilityToggle();
+  }, 500);
+
+  // var toggle_underscore = setInterval(function(){
+  //   if($("#underscore").is(":visible")){
+  //     $('#underscore').css("visibility", "hidden");
+  //   }else {
+  //     $('#underscore').css("visibility", "visible");
+  //   }
+  //
+  // }, 1000);
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
