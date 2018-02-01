@@ -1,24 +1,7 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  jQuery.fn.visible = function() {
-      return this.css('visibility', 'visible');
-  };
 
-  jQuery.fn.invisible = function() {
-      return this.css('visibility', 'hidden');
-  };
-
-  jQuery.fn.visibilityToggle = function() {
-      return this.css('visibility', function(i, visibility) {
-          return (visibility == 'visible') ? 'hidden' : 'visible';
-      });
-  };
-
-  var toggle_visibility = setInterval(function(){
-    $("#abt_underscore").visibilityToggle();
-    $("#attn_underscore").visibilityToggle();
-  }, 500);
 
   // var toggle_underscore = setInterval(function(){
   //   if($("#underscore").is(":visible")){
@@ -67,6 +50,14 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  // Hide navbar when modals trigger
+  $('.portfolio-modal').on('show.bs.modal', function(e) {
+    $(".navbar").addClass("d-none");
+  })
+  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
+    $(".navbar").removeClass("d-none");
+  })
+
 })(jQuery); // End of use strict
 
 // Google Maps Scripts
@@ -76,6 +67,28 @@ google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
   map.setCenter(new google.maps.LatLng(38.636497, -90.233903));
 });
+
+//function to toggle the visibility of the underscores
+(function($){
+  $.fn.visible = function() {
+      return this.css('visibility', 'visible');
+  };
+
+  $.fn.invisible = function() {
+      return this.css('visibility', 'hidden');
+  };
+
+  $.fn.visibilityToggle = function() {
+      return this.css('visibility', function(i, visibility) {
+          return (visibility == 'visible') ? 'hidden' : 'visible';
+      });
+  };
+
+  var toggle_visibility = setInterval(function(){
+    $("#abt_underscore").visibilityToggle();
+    $("#attn_underscore").visibilityToggle();
+  }, 500);
+})(jQuery);
 
 
 
