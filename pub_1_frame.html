@@ -187,11 +187,11 @@
       <div>
         <p>This illustration is under construction still.  The RESTART button is broken.  For now, refresh the page and open the publication again to restart it.</p>
         <br>
-        <h6>Model 1. Threaded.</h6>
-        <p class="item-intro text-muted" style="font-size:14;">
+        <h3>Model 1. Threaded.</h3>
+        <p class="item-intro" style="font-family: Ubuntu; font-size:18; color:green">
         The multi-threaded APU at work in the human...
         </p>
-        <p style="font-family:Ubuntu; margin-left: 8px; font-size:14; ">
+        <p style="font-family:Ubuntu; margin-left: 8px; font-size:14; color:green">
           P1: You concentrate on reading an academic journal.
           <br>
           thread(): Your phone vibrates.
@@ -211,11 +211,11 @@
         </p>
         <br>
         <br>
-        <h6>Model 2. Forked.</h6>
-        <p class="item-intro text-muted" style="font-size:14;">
+        <h3>Model 2. Forked.</h3>
+        <p class="item-intro" style="font-family: Ubuntu; font-size:18; color: green;">
         The forked APU at work in the human...
         </p>
-        <p style="font-family:Ubuntu; margin-left: 8px; font-size:14;">
+        <p style="font-family:Ubuntu; margin-left: 8px; font-size:14; color:green">
           P1: You concentrate on reading an academic journal.
           <br>
           fork(): Your phone vibrates.  P1 pauses.
@@ -226,6 +226,7 @@
           <br>
           P3: You decide to act on the realization and clear the previous processes.
         </p>
+        <br>
         <p>Again, the initial line represents the user's main thought process with one process running.  When a 'distraction' arises that requires the user's attention, the process pauses and runs in the background.  The dashed lines represent this daemon process activity.  The process forks to attend to the 'distraction'.  The forked process spawns an entirely new process.  It does not share the same resources as the original process.  It runs as if it were the only thing on the system.  The pattern repeats when another distracting process begins.  All other processes run in the background, but without conducting any activity.  When a forked process concludes, control of system resources is handed back to the previous process.  The APU must manage the processes' scheduling and resources.</p>
         <p>This forking process is also implemented in computer operating systems.  It differs from multi-threading in that it always isolates system resources for each process.  Each process acts as its own program.  Instead of splitting into multiple branches as is the case with the threading, calling fork() gives birth to an independent program.  The new program executes and then returns to the parent process.  Because modern computers have several processing units, they can run forked programs at the same time, similar to the parallel nature of multi-threading.  However, spawning large numbers of forked processes is time-consuming because the computer needs to create copies of the program for each new process.  If the programmer needs to perform numerous independent actions at once, it is therefore advisable to implement threading.
         </p>
@@ -240,7 +241,7 @@
         <p>Or do you?</p>
         <p>The forked APU model supports Hayles's deep attention concept.  "[C]oncentrating on a single object for long periods, ignoring outside stimuli while so engaged, preferring a single information stream, and having a high tolerance for long focus times" describe facets of a forking program's design.  Recall that a forked process has total control over its own set of program resources.  It accesses and modifies a unique copy of all program data.  In this sense, it is not subject to external influence.  The forked process remains in this state until it completes, and then it hands control back to the operating system.  The forked model treats the attention mechanism as something that directs deep attention.  In the forked model example, the APU attends to each action separately, not all three at once, as is the case with the threaded model.  While things may appear as distractions from a main task, they end up consuming your mental resources just the same, requiring deep attention.
         </p>
-        <p style="font-family: Consolas,monospace; text-align: right;">end<span id="underscore">_</span></p>
+        <p style="font-family: Consolas,monospace; text-align: right; color:green;">end<span id="underscore">_</span></p>
         <br>
       </div>
     </div>
