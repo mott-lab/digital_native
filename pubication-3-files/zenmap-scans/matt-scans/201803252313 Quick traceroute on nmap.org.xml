@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522037608" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 23:13:28 2018" args="nmap -sn --traceroute nmap.org"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 23:13 CDT
+Nmap scan report for nmap.org (45.33.49.119)
+Host is up (0.066s latency).
+rDNS record for 45.33.49.119: ack.nmap.org
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   2.76 ms  HG6Box (192.168.1.1)
+2   ...
+3   11.98 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   13.60 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   16.58 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   18.82 ms bbr01olvemo-bue-3.olve.mo.charter.com (96.34.0.14)
+7   37.97 ms bbr01dnvrco-bue-1.dnvr.co.charter.com (96.34.0.144)
+8   62.27 ms bbr02snjsca-bue-2.snjs.ca.charter.com (96.34.0.2)
+9   62.39 ms prr01snjsca-bue-6.snjs.ca.charter.com (96.34.3.3)
+10  62.35 ms eqix-sv1.linode.com (206.223.116.196)
+11  62.20 ms 173.230.159.7
+12  62.63 ms ack.nmap.org (45.33.49.119)
+
+Nmap done: 1 IP address (1 host up) scanned in 5.02 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="45.33.49.119"></address><hostnames><hostname type="user" name="nmap.org"></hostname><hostname type="PTR" name="ack.nmap.org"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="" proto="icmp"><hop rtt="2.76" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="11.98" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="13.60" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="16.58" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="18.82" host="bbr01olvemo-bue-3.olve.mo.charter.com" ipaddr="96.34.0.14" ttl="6"></hop><hop rtt="37.97" host="bbr01dnvrco-bue-1.dnvr.co.charter.com" ipaddr="96.34.0.144" ttl="7"></hop><hop rtt="62.27" host="bbr02snjsca-bue-2.snjs.ca.charter.com" ipaddr="96.34.0.2" ttl="8"></hop><hop rtt="62.39" host="prr01snjsca-bue-6.snjs.ca.charter.com" ipaddr="96.34.3.3" ttl="9"></hop><hop rtt="62.35" host="eqix-sv1.linode.com" ipaddr="206.223.116.196" ttl="10"></hop><hop rtt="62.20" host="" ipaddr="173.230.159.7" ttl="11"></hop><hop rtt="62.63" host="ack.nmap.org" ipaddr="45.33.49.119" ttl="12"></hop></trace></host><runstats><finished timestr="Sun Mar 25 23:13:33 2018" time="1522037613"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

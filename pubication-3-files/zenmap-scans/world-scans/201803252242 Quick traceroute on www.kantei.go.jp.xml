@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522035778" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 22:42:58 2018" args="nmap -sn --traceroute www.kantei.go.jp"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 22:42 CDT
+Nmap scan report for www.kantei.go.jp (202.214.216.10)
+Host is up (0.28s latency).
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   4.76 ms   HG6Box (192.168.1.1)
+2   ...
+3   15.03 ms  dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   12.44 ms  crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   15.06 ms  bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   13.64 ms  38.140.99.113
+7   23.50 ms  be2388.ccr42.ord01.atlas.cogentco.com (154.54.80.185)
+8   20.47 ms  be2766.ccr41.ord03.atlas.cogentco.com (154.54.46.178)
+9   22.05 ms  0.xe-2-3-0.BR3.CHI13.ALTER.NET (204.255.168.61)
+10  37.49 ms  0.ae14.GW9.IAD8.ALTER.NET (140.222.236.143)
+11  39.88 ms  iij-gw.customer.alter.net (152.179.50.250)
+12  77.65 ms  lax002bb12.IIJ.Net (206.132.168.110)
+13  205.49 ms ngy006bb10.IIJ.Net (58.138.89.41)
+14  213.23 ms fko004bb00.IIJ.Net (58.138.89.129)
+15  210.36 ms fko004ip60.IIJ.Net (58.138.119.126)
+16  208.65 ms 210.138.70.18
+17  211.61 ms 202.214.216.92
+18  204.52 ms 202.214.216.10
+
+Nmap done: 1 IP address (1 host up) scanned in 5.26 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="202.214.216.10"></address><hostnames><hostname type="user" name="www.kantei.go.jp"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="443" proto="tcp"><hop rtt="4.76" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="15.03" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="12.44" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="15.06" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="13.64" host="" ipaddr="38.140.99.113" ttl="6"></hop><hop rtt="23.50" host="be2388.ccr42.ord01.atlas.cogentco.com" ipaddr="154.54.80.185" ttl="7"></hop><hop rtt="20.47" host="be2766.ccr41.ord03.atlas.cogentco.com" ipaddr="154.54.46.178" ttl="8"></hop><hop rtt="22.05" host="0.xe-2-3-0.BR3.CHI13.ALTER.NET" ipaddr="204.255.168.61" ttl="9"></hop><hop rtt="37.49" host="0.ae14.GW9.IAD8.ALTER.NET" ipaddr="140.222.236.143" ttl="10"></hop><hop rtt="39.88" host="iij-gw.customer.alter.net" ipaddr="152.179.50.250" ttl="11"></hop><hop rtt="77.65" host="lax002bb12.IIJ.Net" ipaddr="206.132.168.110" ttl="12"></hop><hop rtt="205.49" host="ngy006bb10.IIJ.Net" ipaddr="58.138.89.41" ttl="13"></hop><hop rtt="213.23" host="fko004bb00.IIJ.Net" ipaddr="58.138.89.129" ttl="14"></hop><hop rtt="210.36" host="fko004ip60.IIJ.Net" ipaddr="58.138.119.126" ttl="15"></hop><hop rtt="208.65" host="" ipaddr="210.138.70.18" ttl="16"></hop><hop rtt="211.61" host="" ipaddr="202.214.216.92" ttl="17"></hop><hop rtt="204.52" host="" ipaddr="202.214.216.10" ttl="18"></hop></trace></host><runstats><finished timestr="Sun Mar 25 22:43:03 2018" time="1522035783"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

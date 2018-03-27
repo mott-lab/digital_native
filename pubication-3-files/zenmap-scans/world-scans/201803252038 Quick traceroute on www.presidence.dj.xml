@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522028335" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 20:38:55 2018" args="nmap -sn --traceroute www.presidence.dj"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 20:38 CDT
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 3.49 seconds
+</output><runstats><finished timestr="Sun Mar 25 20:38:59 2018" time="1522028339"></finished><hosts down="1" total="1" up="0"></hosts></runstats></nmaprun>
