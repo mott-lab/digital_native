@@ -1,6 +1,4 @@
-# Publication 2
-
-## Network Constellations
+# Network Constellations
 
 I used [Zenmap](https://nmap.org/zenmap/) to produce four network maps. [Nmap](https://nmap.org), Zenmap's originator is a tool commonly used by hackers to *map* a network of computers. Zenmap abstracts Nmap by providing a GUI, or graphical user interface, to its users. For that reason, it is often considered childish by the more hardcore hackers who prefer a black terminal screen with green text to be the only true way to hack apart a system. In terms of a computer network, a map discloses which computers are connected to each other. It gives an authorized administrator (or unauthorized hacker) an idea of how the network is laid out. While both tools provide a powerful toolset for hacking, I used a very basic functionality of Zenmap to trace the network route between me and a variety of other hosts. Anyone can do this with the Linux command `traceroute`, but Zenmap produces beautifully interactive maps with every scanning session.
 The maps give viewers a unique perspective on how the Internet behind their computers is structured. They give a virtual image of how "close" one is to a website by illustrating the number of "hops" between computers. However, the maps do not adhere to any physical model of where the Internet's cables lie. In fact, the maps do not demand any kind of rigid structure. In the Zenmap topography, the user can click on any node in the network to center the map around it. The rest of the map is animated and redrawn with the selected node at the heart. The Zenmaps are dynamic constellations of a sliver of the Internet.
@@ -53,7 +51,7 @@ Zenmap legend:
 
 #### Some personal history
 These maps connect me to some sites I have recently visited. The world around me.
-<object data="http://yoursite.com/the.pdf" type="application/pdf" width="700px" height="700px">
+<object data="https://github.com/mgottsacker34/digital_native/blob/gh-pages/pubication-3-files/maps/scan-matt-0.pdff" type="application/pdf" width="700px" height="700px">
     <embed src="https://github.com/mgottsacker34/digital_native/blob/gh-pages/pubication-3-files/maps/scan-matt-0.pdf">
         This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/mgottsacker34/digital_native/blob/gh-pages/pubication-3-files/maps/scan-matt-0.pdf">Download PDF</a>.</p>
     </embed>
