@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522028225" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 20:37:05 2018" args="nmap -sn --traceroute www.bahrain.bh"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 20:37 CDT
+Nmap scan report for www.bahrain.bh (89.31.192.194)
+Host is up (0.38s latency).
+rDNS record for 89.31.192.194: www.bahrain.gov.bh
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   5.03 ms   HG6Box (192.168.1.1)
+2   ...
+3   9.85 ms   dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   16.40 ms  crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   19.01 ms  bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   11.56 ms  38.140.99.113
+7   22.26 ms  be2349.ccr41.ord01.atlas.cogentco.com (154.54.80.181)
+8   28.52 ms  be2717.ccr21.cle04.atlas.cogentco.com (154.54.6.222)
+9   41.22 ms  be2878.ccr21.alb02.atlas.cogentco.com (154.54.26.130)
+10  41.27 ms  be2299.ccr31.bos01.atlas.cogentco.com (154.54.43.9)
+11  102.47 ms be2983.ccr42.lon13.atlas.cogentco.com (154.54.1.177)
+12  101.63 ms be2869.ccr22.lon01.atlas.cogentco.com (154.54.57.162)
+13  214.34 ms 149.14.80.26
+14  229.11 ms dana-mgn-msr-01 (86.51.65.88)
+15  225.15 ms 86.51.21.63
+16  219.00 ms 84-235-107-13.igw-bah-hor.com.sa (84.235.107.13)
+17  215.43 ms 84-235-107-10.igw-bah-hor.com.sa (84.235.107.10)
+18  226.66 ms 84-235-107-138.igw-bah-tub.com.sa (84.235.107.138)
+19  244.32 ms 46.42.84.86
+20  409.79 ms 85.158.130.238
+21  238.93 ms 85.158.131.10
+22  238.71 ms www.seu.gov.bh (89.31.192.252)
+23  240.28 ms www.bahrain.gov.bh (89.31.192.194)
+
+Nmap done: 1 IP address (1 host up) scanned in 5.46 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="89.31.192.194"></address><hostnames><hostname type="user" name="www.bahrain.bh"></hostname><hostname type="PTR" name="www.bahrain.gov.bh"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="443" proto="tcp"><hop rtt="5.03" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="9.85" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="16.40" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="19.01" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="11.56" host="" ipaddr="38.140.99.113" ttl="6"></hop><hop rtt="22.26" host="be2349.ccr41.ord01.atlas.cogentco.com" ipaddr="154.54.80.181" ttl="7"></hop><hop rtt="28.52" host="be2717.ccr21.cle04.atlas.cogentco.com" ipaddr="154.54.6.222" ttl="8"></hop><hop rtt="41.22" host="be2878.ccr21.alb02.atlas.cogentco.com" ipaddr="154.54.26.130" ttl="9"></hop><hop rtt="41.27" host="be2299.ccr31.bos01.atlas.cogentco.com" ipaddr="154.54.43.9" ttl="10"></hop><hop rtt="102.47" host="be2983.ccr42.lon13.atlas.cogentco.com" ipaddr="154.54.1.177" ttl="11"></hop><hop rtt="101.63" host="be2869.ccr22.lon01.atlas.cogentco.com" ipaddr="154.54.57.162" ttl="12"></hop><hop rtt="214.34" host="" ipaddr="149.14.80.26" ttl="13"></hop><hop rtt="229.11" host="dana-mgn-msr-01" ipaddr="86.51.65.88" ttl="14"></hop><hop rtt="225.15" host="" ipaddr="86.51.21.63" ttl="15"></hop><hop rtt="219.00" host="84-235-107-13.igw-bah-hor.com.sa" ipaddr="84.235.107.13" ttl="16"></hop><hop rtt="215.43" host="84-235-107-10.igw-bah-hor.com.sa" ipaddr="84.235.107.10" ttl="17"></hop><hop rtt="226.66" host="84-235-107-138.igw-bah-tub.com.sa" ipaddr="84.235.107.138" ttl="18"></hop><hop rtt="244.32" host="" ipaddr="46.42.84.86" ttl="19"></hop><hop rtt="409.79" host="" ipaddr="85.158.130.238" ttl="20"></hop><hop rtt="238.93" host="" ipaddr="85.158.131.10" ttl="21"></hop><hop rtt="238.71" host="www.seu.gov.bh" ipaddr="89.31.192.252" ttl="22"></hop><hop rtt="240.28" host="www.bahrain.gov.bh" ipaddr="89.31.192.194" ttl="23"></hop></trace></host><runstats><finished timestr="Sun Mar 25 20:37:10 2018" time="1522028230"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

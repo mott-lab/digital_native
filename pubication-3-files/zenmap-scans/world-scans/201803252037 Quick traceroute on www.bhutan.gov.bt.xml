@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522028272" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 20:37:52 2018" args="nmap -sn --traceroute www.bhutan.gov.bt"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 20:37 CDT
+Nmap scan report for www.bhutan.gov.bt (202.144.128.217)
+Host is up (0.44s latency).
+rDNS record for 202.144.128.217: sinchula.druknet.bt
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   3.59 ms   HG6Box (192.168.1.1)
+2   ...
+3   16.39 ms  dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   12.74 ms  crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   19.09 ms  bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   17.15 ms  38.140.99.113
+7   126.52 ms be2349.ccr41.ord01.atlas.cogentco.com (154.54.80.181)
+8   19.12 ms  be2765.ccr41.ord03.atlas.cogentco.com (154.54.45.18)
+9   24.16 ms  zayo.ord03.atlas.cogentco.com (154.54.9.38)
+10  17.23 ms  ae17.cr2.ord2.us.zip.zayo.com (64.125.31.82)
+11  109.16 ms ae27.cs2.ord2.us.eth.zayo.com (64.125.30.244)
+12  107.11 ms ae3.cs2.lga5.us.eth.zayo.com (64.125.29.212)
+13  ...
+14  107.23 ms ae5.cs1.lhr11.uk.eth.zayo.com (64.125.29.127)
+15  111.18 ms ae27.mpr2.lhr2.uk.zip.zayo.com (64.125.30.237)
+16  109.09 ms ae10.mpr1.lhr1.uk.zip.zayo.com (64.125.31.193)
+17  109.07 ms 213.152.225.164
+18  295.41 ms 103.245.242.65
+19  297.51 ms te0-0-0.cr1.thimphu.druknet.bt (103.245.241.125)
+20  298.77 ms sinchula.druknet.bt (202.144.128.217)
+
+Nmap done: 1 IP address (1 host up) scanned in 5.11 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="202.144.128.217"></address><hostnames><hostname type="user" name="www.bhutan.gov.bt"></hostname><hostname type="PTR" name="sinchula.druknet.bt"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="443" proto="tcp"><hop rtt="3.59" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="16.39" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="12.74" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="19.09" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="17.15" host="" ipaddr="38.140.99.113" ttl="6"></hop><hop rtt="126.52" host="be2349.ccr41.ord01.atlas.cogentco.com" ipaddr="154.54.80.181" ttl="7"></hop><hop rtt="19.12" host="be2765.ccr41.ord03.atlas.cogentco.com" ipaddr="154.54.45.18" ttl="8"></hop><hop rtt="24.16" host="zayo.ord03.atlas.cogentco.com" ipaddr="154.54.9.38" ttl="9"></hop><hop rtt="17.23" host="ae17.cr2.ord2.us.zip.zayo.com" ipaddr="64.125.31.82" ttl="10"></hop><hop rtt="109.16" host="ae27.cs2.ord2.us.eth.zayo.com" ipaddr="64.125.30.244" ttl="11"></hop><hop rtt="107.11" host="ae3.cs2.lga5.us.eth.zayo.com" ipaddr="64.125.29.212" ttl="12"></hop><hop rtt="107.23" host="ae5.cs1.lhr11.uk.eth.zayo.com" ipaddr="64.125.29.127" ttl="14"></hop><hop rtt="111.18" host="ae27.mpr2.lhr2.uk.zip.zayo.com" ipaddr="64.125.30.237" ttl="15"></hop><hop rtt="109.09" host="ae10.mpr1.lhr1.uk.zip.zayo.com" ipaddr="64.125.31.193" ttl="16"></hop><hop rtt="109.07" host="" ipaddr="213.152.225.164" ttl="17"></hop><hop rtt="295.41" host="" ipaddr="103.245.242.65" ttl="18"></hop><hop rtt="297.51" host="te0-0-0.cr1.thimphu.druknet.bt" ipaddr="103.245.241.125" ttl="19"></hop><hop rtt="298.77" host="sinchula.druknet.bt" ipaddr="202.144.128.217" ttl="20"></hop></trace></host><runstats><finished timestr="Sun Mar 25 20:37:57 2018" time="1522028277"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

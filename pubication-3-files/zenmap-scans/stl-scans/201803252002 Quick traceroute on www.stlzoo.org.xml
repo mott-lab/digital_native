@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522026122" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 20:02:02 2018" args="nmap -sn --traceroute www.stlzoo.org"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 20:02 CDT
+Nmap scan report for www.stlzoo.org (23.239.25.194)
+Host is up (0.034s latency).
+rDNS record for 23.239.25.194: gawain.websanity.com
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+1   2.60 ms  HG6Box (192.168.1.1)
+2   ...
+3   14.16 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   14.18 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   16.29 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   42.26 ms bbr01dllstx-bue-805.dlls.tx.charter.com (96.34.0.17)
+7   29.32 ms prr02dllstx-bue-1.dlls.tx.charter.com (96.34.3.247)
+8   29.34 ms EQIX-IX-DA.linode.com (206.223.118.107)
+9   29.84 ms 45.79.12.1
+10  40.44 ms gawain.websanity.com (23.239.25.194)
+
+Nmap done: 1 IP address (1 host up) scanned in 4.92 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="23.239.25.194"></address><hostnames><hostname type="user" name="www.stlzoo.org"></hostname><hostname type="PTR" name="gawain.websanity.com"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="443" proto="tcp"><hop rtt="2.60" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="14.16" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="14.18" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="16.29" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="42.26" host="bbr01dllstx-bue-805.dlls.tx.charter.com" ipaddr="96.34.0.17" ttl="6"></hop><hop rtt="29.32" host="prr02dllstx-bue-1.dlls.tx.charter.com" ipaddr="96.34.3.247" ttl="7"></hop><hop rtt="29.34" host="EQIX-IX-DA.linode.com" ipaddr="206.223.118.107" ttl="8"></hop><hop rtt="29.84" host="" ipaddr="45.79.12.1" ttl="9"></hop><hop rtt="40.44" host="gawain.websanity.com" ipaddr="23.239.25.194" ttl="10"></hop></trace></host><runstats><finished timestr="Sun Mar 25 20:02:07 2018" time="1522026127"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522037438" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 23:10:38 2018" args="nmap -sn --traceroute www.outlook.office.com"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 23:10 CDT
+Nmap scan report for www.outlook.office.com (198.105.254.24)
+Host is up (0.077s latency).
+Other addresses for www.outlook.office.com (not scanned): 198.105.244.24
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   2.95 ms  HG6Box (192.168.1.1)
+2   ...
+3   14.98 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   18.06 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   28.59 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   12.92 ms bbr01olvemo-bue-3.olve.mo.charter.com (96.34.0.14)
+7   25.33 ms bbr02chcgil-bue-2.chcg.il.charter.com (96.34.0.12)
+8   27.35 ms prr01chcgil-bue-4.chcg.il.charter.com (96.34.3.11)
+9   20.40 ms 100ge6-2.core2.chi1.he.net (184.105.250.37)
+10  40.54 ms 100ge12-1.core1.mci3.he.net (184.105.81.209)
+11  43.62 ms 100ge12-1.core1.den1.he.net (184.105.64.49)
+12  76.36 ms 100ge12-1.core1.lax2.he.net (184.105.222.113)
+13  75.27 ms xerocole-inc.gigabitethernet2-9.core1.lax2.he.net (64.62.133.170)
+14  76.57 ms 198.105.254.24
+
+Nmap done: 1 IP address (1 host up) scanned in 3.28 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="198.105.254.24"></address><hostnames><hostname type="user" name="www.outlook.office.com"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="80" proto="tcp"><hop rtt="2.95" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="14.98" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="18.06" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="28.59" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="12.92" host="bbr01olvemo-bue-3.olve.mo.charter.com" ipaddr="96.34.0.14" ttl="6"></hop><hop rtt="25.33" host="bbr02chcgil-bue-2.chcg.il.charter.com" ipaddr="96.34.0.12" ttl="7"></hop><hop rtt="27.35" host="prr01chcgil-bue-4.chcg.il.charter.com" ipaddr="96.34.3.11" ttl="8"></hop><hop rtt="20.40" host="100ge6-2.core2.chi1.he.net" ipaddr="184.105.250.37" ttl="9"></hop><hop rtt="40.54" host="100ge12-1.core1.mci3.he.net" ipaddr="184.105.81.209" ttl="10"></hop><hop rtt="43.62" host="100ge12-1.core1.den1.he.net" ipaddr="184.105.64.49" ttl="11"></hop><hop rtt="76.36" host="100ge12-1.core1.lax2.he.net" ipaddr="184.105.222.113" ttl="12"></hop><hop rtt="75.27" host="xerocole-inc.gigabitethernet2-9.core1.lax2.he.net" ipaddr="64.62.133.170" ttl="13"></hop><hop rtt="76.57" host="" ipaddr="198.105.254.24" ttl="14"></hop></trace></host><runstats><finished timestr="Sun Mar 25 23:10:42 2018" time="1522037442"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

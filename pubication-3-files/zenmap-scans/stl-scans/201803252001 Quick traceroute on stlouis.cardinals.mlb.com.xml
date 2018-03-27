@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522026108" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 20:01:48 2018" args="nmap -sn --traceroute stlouis.cardinals.mlb.com"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 20:01 CDT
+Nmap scan report for stlouis.cardinals.mlb.com (23.48.208.83)
+Host is up (0.017s latency).
+Other addresses for stlouis.cardinals.mlb.com (not scanned): 23.48.208.88
+rDNS record for 23.48.208.83: a23-48-208-83.deploy.static.akamaitechnologies.com
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   2.67 ms  HG6Box (192.168.1.1)
+2   ...
+3   11.98 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   12.00 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   14.86 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   18.98 ms bbr01olvemo-bue-3.olve.mo.charter.com (96.34.0.14)
+7   22.75 ms bbr02chcgil-bue-2.chcg.il.charter.com (96.34.0.12)
+8   16.75 ms bbr02chcgil-bue-5.chcg.il.charter.com (96.34.3.123)
+9   ...
+10  16.92 ms a23-48-208-83.deploy.static.akamaitechnologies.com (23.48.208.83)
+
+Nmap done: 1 IP address (1 host up) scanned in 3.11 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="23.48.208.83"></address><hostnames><hostname type="user" name="stlouis.cardinals.mlb.com"></hostname><hostname type="PTR" name="a23-48-208-83.deploy.static.akamaitechnologies.com"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="" proto="icmp"><hop rtt="2.67" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="11.98" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="12.00" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="14.86" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="18.98" host="bbr01olvemo-bue-3.olve.mo.charter.com" ipaddr="96.34.0.14" ttl="6"></hop><hop rtt="22.75" host="bbr02chcgil-bue-2.chcg.il.charter.com" ipaddr="96.34.0.12" ttl="7"></hop><hop rtt="16.75" host="bbr02chcgil-bue-5.chcg.il.charter.com" ipaddr="96.34.3.123" ttl="8"></hop><hop rtt="16.92" host="a23-48-208-83.deploy.static.akamaitechnologies.com" ipaddr="23.48.208.83" ttl="10"></hop></trace></host><runstats><finished timestr="Sun Mar 25 20:01:51 2018" time="1522026111"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

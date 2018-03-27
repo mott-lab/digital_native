@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522036382" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 22:53:02 2018" args="nmap -sn --traceroute www.althingi.is"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 22:53 CDT
+Nmap scan report for www.althingi.is (79.171.97.215)
+Host is up (0.15s latency).
+rDNS record for 79.171.97.215: virvir.althingi.is
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   6.25 ms   HG6Box (192.168.1.1)
+2   ...
+3   14.90 ms  dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   16.10 ms  crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   19.82 ms  bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   14.17 ms  38.140.99.113
+7   22.18 ms  be2349.ccr41.ord01.atlas.cogentco.com (154.54.80.181)
+8   27.05 ms  be2717.ccr21.cle04.atlas.cogentco.com (154.54.6.222)
+9   36.83 ms  be2878.ccr21.alb02.atlas.cogentco.com (154.54.26.130)
+10  40.81 ms  be2299.ccr31.bos01.atlas.cogentco.com (154.54.43.9)
+11  104.92 ms be2983.ccr42.lon13.atlas.cogentco.com (154.54.1.177)
+12  101.91 ms be2869.ccr22.lon01.atlas.cogentco.com (154.54.57.162)
+13  106.71 ms be2950.rcr21.b023101-0.lon01.atlas.cogentco.com (130.117.2.110)
+14  108.23 ms teledesign-plc.demarc.cogentco.com (149.6.148.46)
+15  144.98 ms 157-157-6-52.static.simnet.is (157.157.6.52)
+16  147.28 ms 157-157-6-53.static.simnet.is (157.157.6.53)
+17  142.82 ms customer-gigabit-1-223.oldugrandi.linanet.is (213.220.99.114)
+18  148.27 ms virvir.althingi.is (79.171.97.215)
+
+Nmap done: 1 IP address (1 host up) scanned in 4.27 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="79.171.97.215"></address><hostnames><hostname type="user" name="www.althingi.is"></hostname><hostname type="PTR" name="virvir.althingi.is"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="443" proto="tcp"><hop rtt="6.25" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="14.90" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="16.10" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="19.82" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="14.17" host="" ipaddr="38.140.99.113" ttl="6"></hop><hop rtt="22.18" host="be2349.ccr41.ord01.atlas.cogentco.com" ipaddr="154.54.80.181" ttl="7"></hop><hop rtt="27.05" host="be2717.ccr21.cle04.atlas.cogentco.com" ipaddr="154.54.6.222" ttl="8"></hop><hop rtt="36.83" host="be2878.ccr21.alb02.atlas.cogentco.com" ipaddr="154.54.26.130" ttl="9"></hop><hop rtt="40.81" host="be2299.ccr31.bos01.atlas.cogentco.com" ipaddr="154.54.43.9" ttl="10"></hop><hop rtt="104.92" host="be2983.ccr42.lon13.atlas.cogentco.com" ipaddr="154.54.1.177" ttl="11"></hop><hop rtt="101.91" host="be2869.ccr22.lon01.atlas.cogentco.com" ipaddr="154.54.57.162" ttl="12"></hop><hop rtt="106.71" host="be2950.rcr21.b023101-0.lon01.atlas.cogentco.com" ipaddr="130.117.2.110" ttl="13"></hop><hop rtt="108.23" host="teledesign-plc.demarc.cogentco.com" ipaddr="149.6.148.46" ttl="14"></hop><hop rtt="144.98" host="157-157-6-52.static.simnet.is" ipaddr="157.157.6.52" ttl="15"></hop><hop rtt="147.28" host="157-157-6-53.static.simnet.is" ipaddr="157.157.6.53" ttl="16"></hop><hop rtt="142.82" host="customer-gigabit-1-223.oldugrandi.linanet.is" ipaddr="213.220.99.114" ttl="17"></hop><hop rtt="148.27" host="virvir.althingi.is" ipaddr="79.171.97.215" ttl="18"></hop></trace></host><runstats><finished timestr="Sun Mar 25 22:53:06 2018" time="1522036386"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

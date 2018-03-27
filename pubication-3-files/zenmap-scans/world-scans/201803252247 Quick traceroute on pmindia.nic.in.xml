@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522036053" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 22:47:33 2018" args="nmap -sn --traceroute pmindia.nic.in"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 22:47 CDT
+Nmap scan report for pmindia.nic.in (164.100.83.136)
+Host is up (0.29s latency).
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   4.18 ms   HG6Box (192.168.1.1)
+2   ...
+3   15.09 ms  dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   11.59 ms  crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   23.75 ms  bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   12.45 ms  38.140.99.113
+7   19.13 ms  be2388.ccr42.ord01.atlas.cogentco.com (154.54.80.185)
+8   20.45 ms  be2766.ccr41.ord03.atlas.cogentco.com (154.54.46.178)
+9   21.76 ms  tata.ord03.atlas.cogentco.com (154.54.10.162)
+10  50.50 ms  if-ae-26-2.tcore2.NTO-New-York.as6453.net (216.6.81.28)
+11  40.27 ms  if-ae-14-2.tcore4.NJY-Newark.as6453.net (63.243.186.17)
+12  37.07 ms  if-ae-4-3.thar2.NJY-Newark.as6453.net (66.198.111.21)
+13  233.09 ms 66.198.70.34
+14  ...
+15  291.63 ms 14.140.210.22.static-Delhi-vsnl.net.in (14.140.210.22)
+16  ... 18
+19  281.45 ms 164.100.83.136
+
+Nmap done: 1 IP address (1 host up) scanned in 4.67 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="164.100.83.136"></address><hostnames><hostname type="user" name="pmindia.nic.in"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="443" proto="tcp"><hop rtt="4.18" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="15.09" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="11.59" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="23.75" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="12.45" host="" ipaddr="38.140.99.113" ttl="6"></hop><hop rtt="19.13" host="be2388.ccr42.ord01.atlas.cogentco.com" ipaddr="154.54.80.185" ttl="7"></hop><hop rtt="20.45" host="be2766.ccr41.ord03.atlas.cogentco.com" ipaddr="154.54.46.178" ttl="8"></hop><hop rtt="21.76" host="tata.ord03.atlas.cogentco.com" ipaddr="154.54.10.162" ttl="9"></hop><hop rtt="50.50" host="if-ae-26-2.tcore2.NTO-New-York.as6453.net" ipaddr="216.6.81.28" ttl="10"></hop><hop rtt="40.27" host="if-ae-14-2.tcore4.NJY-Newark.as6453.net" ipaddr="63.243.186.17" ttl="11"></hop><hop rtt="37.07" host="if-ae-4-3.thar2.NJY-Newark.as6453.net" ipaddr="66.198.111.21" ttl="12"></hop><hop rtt="233.09" host="" ipaddr="66.198.70.34" ttl="13"></hop><hop rtt="291.63" host="14.140.210.22.static-Delhi-vsnl.net.in" ipaddr="14.140.210.22" ttl="15"></hop><hop rtt="281.45" host="" ipaddr="164.100.83.136" ttl="19"></hop></trace></host><runstats><finished timestr="Sun Mar 25 22:47:37 2018" time="1522036057"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

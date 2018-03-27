@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522037402" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 23:10:02 2018" args="nmap -sn --traceroute www.google.com"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 23:10 CDT
+Nmap scan report for www.google.com (172.217.164.68)
+Host is up (0.035s latency).
+rDNS record for 172.217.164.68: atl26s18-in-f4.1e100.net
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   2.72 ms  HG6Box (192.168.1.1)
+2   ...
+3   11.16 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   12.50 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   13.81 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   19.79 ms bbr01olvemo-bue-3.olve.mo.charter.com (96.34.0.14)
+7   22.33 ms bbr02chcgil-bue-2.chcg.il.charter.com (96.34.0.12)
+8   18.52 ms prr01chcgil-bue-4.chcg.il.charter.com (96.34.3.11)
+9   18.53 ms 96-34-152-30.static.unas.mo.charter.com (96.34.152.30)
+10  18.69 ms 108.170.243.165
+11  21.45 ms 209.85.250.144
+12  34.70 ms 209.85.143.28
+13  36.13 ms 108.170.229.139
+14  ...
+15  37.76 ms 216.239.47.179
+16  35.18 ms atl26s18-in-f4.1e100.net (172.217.164.68)
+
+Nmap done: 1 IP address (1 host up) scanned in 4.24 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="172.217.164.68"></address><hostnames><hostname type="user" name="www.google.com"></hostname><hostname type="PTR" name="atl26s18-in-f4.1e100.net"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="" proto="icmp"><hop rtt="2.72" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="11.16" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="12.50" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="13.81" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="19.79" host="bbr01olvemo-bue-3.olve.mo.charter.com" ipaddr="96.34.0.14" ttl="6"></hop><hop rtt="22.33" host="bbr02chcgil-bue-2.chcg.il.charter.com" ipaddr="96.34.0.12" ttl="7"></hop><hop rtt="18.52" host="prr01chcgil-bue-4.chcg.il.charter.com" ipaddr="96.34.3.11" ttl="8"></hop><hop rtt="18.53" host="96-34-152-30.static.unas.mo.charter.com" ipaddr="96.34.152.30" ttl="9"></hop><hop rtt="18.69" host="" ipaddr="108.170.243.165" ttl="10"></hop><hop rtt="21.45" host="" ipaddr="209.85.250.144" ttl="11"></hop><hop rtt="34.70" host="" ipaddr="209.85.143.28" ttl="12"></hop><hop rtt="36.13" host="" ipaddr="108.170.229.139" ttl="13"></hop><hop rtt="37.76" host="" ipaddr="216.239.47.179" ttl="15"></hop><hop rtt="35.18" host="atl26s18-in-f4.1e100.net" ipaddr="172.217.164.68" ttl="16"></hop></trace></host><runstats><finished timestr="Sun Mar 25 23:10:07 2018" time="1522037407"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

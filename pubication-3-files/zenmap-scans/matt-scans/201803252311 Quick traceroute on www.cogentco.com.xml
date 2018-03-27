@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522037489" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 23:11:29 2018" args="nmap -sn --traceroute www.cogentco.com"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 23:11 CDT
+Nmap scan report for www.cogentco.com (38.100.128.10)
+Host is up (0.039s latency).
+rDNS record for 38.100.128.10: cogentco.com
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   2.64 ms  HG6Box (192.168.1.1)
+2   ...
+3   11.16 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   12.58 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   19.39 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   12.99 ms 38.140.99.113
+7   18.76 ms be2388.ccr42.ord01.atlas.cogentco.com (154.54.80.185)
+8   24.78 ms be2718.ccr22.cle04.atlas.cogentco.com (154.54.7.130)
+9   38.15 ms be2892.ccr42.dca01.atlas.cogentco.com (154.54.82.254)
+10  38.18 ms be3339.rcr21.iad03.atlas.cogentco.com (154.54.3.218)
+11  38.18 ms be2952.agr11.iad03.atlas.cogentco.com (154.54.0.82)
+12  37.96 ms cogentco.com (38.100.128.10)
+
+Nmap done: 1 IP address (1 host up) scanned in 3.27 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="38.100.128.10"></address><hostnames><hostname type="user" name="www.cogentco.com"></hostname><hostname type="PTR" name="cogentco.com"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="" proto="icmp"><hop rtt="2.64" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="11.16" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="12.58" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="19.39" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="12.99" host="" ipaddr="38.140.99.113" ttl="6"></hop><hop rtt="18.76" host="be2388.ccr42.ord01.atlas.cogentco.com" ipaddr="154.54.80.185" ttl="7"></hop><hop rtt="24.78" host="be2718.ccr22.cle04.atlas.cogentco.com" ipaddr="154.54.7.130" ttl="8"></hop><hop rtt="38.15" host="be2892.ccr42.dca01.atlas.cogentco.com" ipaddr="154.54.82.254" ttl="9"></hop><hop rtt="38.18" host="be3339.rcr21.iad03.atlas.cogentco.com" ipaddr="154.54.3.218" ttl="10"></hop><hop rtt="38.18" host="be2952.agr11.iad03.atlas.cogentco.com" ipaddr="154.54.0.82" ttl="11"></hop><hop rtt="37.96" host="cogentco.com" ipaddr="38.100.128.10" ttl="12"></hop></trace></host><runstats><finished timestr="Sun Mar 25 23:11:32 2018" time="1522037492"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>
