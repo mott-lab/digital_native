@@ -38,14 +38,26 @@ In his piece **The Experience of Living in Cities**, Stanley Milgram describes t
 
 These factors produce an overload of information for the common user. Since it is inefficient to process all of this information by oneself, several mechanisms are in place to map, reduce, and filter it. Some of these mechanisms take the form of built structures. The Internet and its extensive content follow this model.
 
-### The maps
+### The network constellations
+
+As noted above, the maps are based on traceroute results. Traceroute maxes out at 30 hops by default, and I used this default value to keep the maps easy to visualize. They are essentially visual representations of how far away my computer is from the computer that hosts each of the websites.
+
+I noticed that a lot of my Internet traffic went through an ISP called Cogent Communications. Here is a map of their network brains and neurons.
+![CogentCo Map](cogentco-netmap.jpg)
 
 Most of the maps contain my wifi router at the center. 4 'hops' away, you will find me, represented by the black dot labeled `localhost`.
 
+
 Zenmap legend:
-![Zenmap legend image](cogentco-netmap.jpg)
+![Zenmap legend image](zenmap-legend.png)
 
 #### Some personal history
+These maps connect me to some sites I have recently visited. The world around me.
+<object data="http://yoursite.com/the.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/mgottsacker34/digital_native/blob/gh-pages/pubication-3-files/maps/scan-matt-0.pdf">
+        This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/mgottsacker34/digital_native/blob/gh-pages/pubication-3-files/maps/scan-matt-0.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
 ![personal scan 0](maps/scan-matt-0.pdf)
 ![personal scan 1](maps/scan-matt-1.pdf)
 ![personal scan 2](maps/scan-matt-2.pdf)
@@ -59,6 +71,7 @@ Zenmap legend:
 ![world scan 1](maps/scan-world-1.pdf)
 
 #### Where is Netflix?
+This map demonstrates the active form of the Internet. With every scan, I hit `www.netflix.com` or `netflix.com` as the endpoint. With only a handful of requests over the span of an hour, it was often traced to different locations. I chose to map Netflix because it is a major content provider, and the way it engineers its content distribution is innovative and interesting. In order to stream large files to enormous numbers of users, Netflix needs to be dynamic. It must respond to load changes and always try to serve content closest to the user to ensure a high quality of service.
 ![netflix scan 0](maps/scan-netflix-0.pdf)
 ![netflix scan 1](maps/scan-netflix-1.pdf)
 
