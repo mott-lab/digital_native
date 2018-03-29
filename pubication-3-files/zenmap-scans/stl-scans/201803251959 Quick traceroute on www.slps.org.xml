@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522025964" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 19:59:24 2018" args="nmap -sn --traceroute www.slps.org"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 19:59 CDT
+Nmap scan report for www.slps.org (54.164.182.250)
+Host is up (0.037s latency).
+Other addresses for www.slps.org (not scanned): 54.88.21.37
+rDNS record for 54.164.182.250: ec2-54-164-182-250.compute-1.amazonaws.com
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   2.95 ms  HG6Box (192.168.1.1)
+2   ...
+3   10.34 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   15.17 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   16.72 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   13.91 ms bbr01olvemo-bue-3.olve.mo.charter.com (96.34.0.14)
+7   22.48 ms bbr02chcgil-bue-2.chcg.il.charter.com (96.34.0.12)
+8   17.84 ms prr01chcgil-bue-4.chcg.il.charter.com (96.34.3.11)
+9   18.08 ms ae14.ar1.ord1.us.as4436.gtt.net (69.31.111.113)
+10  19.24 ms 52.93.249.17
+11  17.27 ms 52.95.62.129
+12  35.31 ms 54.239.42.61
+13  44.66 ms 54.239.42.73
+14  39.49 ms 52.93.128.103
+15  ...
+16  45.23 ms 54.239.108.250
+17  48.03 ms 54.239.108.184
+18  57.86 ms 54.239.108.148
+19  39.34 ms 52.93.26.38
+20  52.74 ms 54.239.110.239
+21  40.38 ms 205.251.244.81
+22  61.02 ms 52.93.27.215
+23  ... 26
+27  37.73 ms ec2-54-164-182-250.compute-1.amazonaws.com (54.164.182.250)
+
+Nmap done: 1 IP address (1 host up) scanned in 3.42 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="54.164.182.250"></address><hostnames><hostname type="user" name="www.slps.org"></hostname><hostname type="PTR" name="ec2-54-164-182-250.compute-1.amazonaws.com"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="80" proto="tcp"><hop rtt="2.95" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="10.34" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="15.17" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="16.72" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="13.91" host="bbr01olvemo-bue-3.olve.mo.charter.com" ipaddr="96.34.0.14" ttl="6"></hop><hop rtt="22.48" host="bbr02chcgil-bue-2.chcg.il.charter.com" ipaddr="96.34.0.12" ttl="7"></hop><hop rtt="17.84" host="prr01chcgil-bue-4.chcg.il.charter.com" ipaddr="96.34.3.11" ttl="8"></hop><hop rtt="18.08" host="ae14.ar1.ord1.us.as4436.gtt.net" ipaddr="69.31.111.113" ttl="9"></hop><hop rtt="19.24" host="" ipaddr="52.93.249.17" ttl="10"></hop><hop rtt="17.27" host="" ipaddr="52.95.62.129" ttl="11"></hop><hop rtt="35.31" host="" ipaddr="54.239.42.61" ttl="12"></hop><hop rtt="44.66" host="" ipaddr="54.239.42.73" ttl="13"></hop><hop rtt="39.49" host="" ipaddr="52.93.128.103" ttl="14"></hop><hop rtt="45.23" host="" ipaddr="54.239.108.250" ttl="16"></hop><hop rtt="48.03" host="" ipaddr="54.239.108.184" ttl="17"></hop><hop rtt="57.86" host="" ipaddr="54.239.108.148" ttl="18"></hop><hop rtt="39.34" host="" ipaddr="52.93.26.38" ttl="19"></hop><hop rtt="52.74" host="" ipaddr="54.239.110.239" ttl="20"></hop><hop rtt="40.38" host="" ipaddr="205.251.244.81" ttl="21"></hop><hop rtt="61.02" host="" ipaddr="52.93.27.215" ttl="22"></hop><hop rtt="37.73" host="ec2-54-164-182-250.compute-1.amazonaws.com" ipaddr="54.164.182.250" ttl="27"></hop></trace></host><runstats><finished timestr="Sun Mar 25 19:59:28 2018" time="1522025968"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

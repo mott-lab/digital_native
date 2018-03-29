@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522037415" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 23:10:15 2018" args="nmap -sn --traceroute www.golang.org"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 23:10 CDT
+Nmap scan report for www.golang.org (64.233.176.141)
+Host is up (0.037s latency).
+rDNS record for 64.233.176.141: yw-in-f141.1e100.net
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+1   2.92 ms  HG6Box (192.168.1.1)
+2   ...
+3   14.58 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   16.08 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   21.15 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   13.35 ms bbr01olvemo-bue-3.olve.mo.charter.com (96.34.0.14)
+7   21.44 ms bbr02chcgil-bue-2.chcg.il.charter.com (96.34.0.12)
+8   19.12 ms prr01chcgil-bue-4.chcg.il.charter.com (96.34.3.11)
+9   17.90 ms 96-34-152-30.static.unas.mo.charter.com (96.34.152.30)
+10  17.94 ms 108.170.243.197
+11  17.38 ms 108.170.243.165
+12  16.76 ms 216.239.40.189
+13  36.23 ms 209.85.143.28
+14  35.21 ms 216.239.56.166
+15  ... 23
+24  36.91 ms yw-in-f141.1e100.net (64.233.176.141)
+
+Nmap done: 1 IP address (1 host up) scanned in 3.31 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="64.233.176.141"></address><hostnames><hostname type="user" name="www.golang.org"></hostname><hostname type="PTR" name="yw-in-f141.1e100.net"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="443" proto="tcp"><hop rtt="2.92" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="14.58" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="16.08" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="21.15" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="13.35" host="bbr01olvemo-bue-3.olve.mo.charter.com" ipaddr="96.34.0.14" ttl="6"></hop><hop rtt="21.44" host="bbr02chcgil-bue-2.chcg.il.charter.com" ipaddr="96.34.0.12" ttl="7"></hop><hop rtt="19.12" host="prr01chcgil-bue-4.chcg.il.charter.com" ipaddr="96.34.3.11" ttl="8"></hop><hop rtt="17.90" host="96-34-152-30.static.unas.mo.charter.com" ipaddr="96.34.152.30" ttl="9"></hop><hop rtt="17.94" host="" ipaddr="108.170.243.197" ttl="10"></hop><hop rtt="17.38" host="" ipaddr="108.170.243.165" ttl="11"></hop><hop rtt="16.76" host="" ipaddr="216.239.40.189" ttl="12"></hop><hop rtt="36.23" host="" ipaddr="209.85.143.28" ttl="13"></hop><hop rtt="35.21" host="" ipaddr="216.239.56.166" ttl="14"></hop><hop rtt="36.91" host="yw-in-f141.1e100.net" ipaddr="64.233.176.141" ttl="24"></hop></trace></host><runstats><finished timestr="Sun Mar 25 23:10:18 2018" time="1522037418"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

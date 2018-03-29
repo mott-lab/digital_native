@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522026090" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 20:01:30 2018" args="nmap -sn --traceroute www.anheuser-busch.com"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 20:01 CDT
+Nmap scan report for www.anheuser-busch.com (199.83.134.16)
+Host is up (0.018s latency).
+rDNS record for 199.83.134.16: 199.83.134.16.ip.incapdns.net
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   3.38 ms  HG6Box (192.168.1.1)
+2   ...
+3   14.21 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   13.34 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   14.83 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   17.20 ms bbr01olvemo-bue-3.olve.mo.charter.com (96.34.0.14)
+7   25.94 ms bbr02chcgil-bue-2.chcg.il.charter.com (96.34.0.12)
+8   17.14 ms prr01chcgil-bue-4.chcg.il.charter.com (96.34.3.11)
+9   21.32 ms eqix-ch1.imperva.com (206.223.119.143)
+10  17.23 ms 199.83.134.16.ip.incapdns.net (199.83.134.16)
+
+Nmap done: 1 IP address (1 host up) scanned in 3.14 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="199.83.134.16"></address><hostnames><hostname type="user" name="www.anheuser-busch.com"></hostname><hostname type="PTR" name="199.83.134.16.ip.incapdns.net"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="80" proto="tcp"><hop rtt="3.38" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="14.21" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="13.34" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="14.83" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="17.20" host="bbr01olvemo-bue-3.olve.mo.charter.com" ipaddr="96.34.0.14" ttl="6"></hop><hop rtt="25.94" host="bbr02chcgil-bue-2.chcg.il.charter.com" ipaddr="96.34.0.12" ttl="7"></hop><hop rtt="17.14" host="prr01chcgil-bue-4.chcg.il.charter.com" ipaddr="96.34.3.11" ttl="8"></hop><hop rtt="21.32" host="eqix-ch1.imperva.com" ipaddr="206.223.119.143" ttl="9"></hop><hop rtt="17.23" host="199.83.134.16.ip.incapdns.net" ipaddr="199.83.134.16" ttl="10"></hop></trace></host><runstats><finished timestr="Sun Mar 25 20:01:33 2018" time="1522026093"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

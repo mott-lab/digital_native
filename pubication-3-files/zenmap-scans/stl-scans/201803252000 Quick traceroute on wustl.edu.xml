@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522026030" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 20:00:30 2018" args="nmap -sn --traceroute wustl.edu"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 20:00 CDT
+Nmap scan report for wustl.edu (128.252.160.5)
+Host is up (0.016s latency).
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   1.84 ms  HG6Box (192.168.1.1)
+2   ...
+3   12.11 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   17.15 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   17.16 ms dtr01wtrlil-tge-0-7-0-0.wtrl.il.charter.com (96.34.49.222)
+6   13.54 ms crr02olvemo-bue-200.olve.mo.charter.com (96.34.76.176)
+7   14.36 ms dtr01stlsmo-bue-20.stls.mo.charter.com (96.34.76.179)
+8   19.00 ms acr09wrbgmo-tge-7-1.wrbg.mo.charter.com (96.34.56.49)
+9   18.39 ms ge-1-0-0-commodity-core.nts.wustl.edu (75.128.174.18)
+10  13.93 ms xe-0-0-6-eps-l29-wu-rt-0.nts.wustl.edu (128.252.100.125)
+11  14.27 ms eth4-17-eps-core.nts.wustl.edu (128.252.1.43)
+12  14.90 ms po11-gdce57-wcdc125-wu-vml-0.nts.wustl.edu (128.252.1.108)
+13  19.37 ms wustl.edu (128.252.160.5)
+
+Nmap done: 1 IP address (1 host up) scanned in 3.17 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="128.252.160.5"></address><hostnames><hostname type="user" name="wustl.edu"></hostname><hostname type="PTR" name="wustl.edu"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="80" proto="tcp"><hop rtt="1.84" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="12.11" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="17.15" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="17.16" host="dtr01wtrlil-tge-0-7-0-0.wtrl.il.charter.com" ipaddr="96.34.49.222" ttl="5"></hop><hop rtt="13.54" host="crr02olvemo-bue-200.olve.mo.charter.com" ipaddr="96.34.76.176" ttl="6"></hop><hop rtt="14.36" host="dtr01stlsmo-bue-20.stls.mo.charter.com" ipaddr="96.34.76.179" ttl="7"></hop><hop rtt="19.00" host="acr09wrbgmo-tge-7-1.wrbg.mo.charter.com" ipaddr="96.34.56.49" ttl="8"></hop><hop rtt="18.39" host="ge-1-0-0-commodity-core.nts.wustl.edu" ipaddr="75.128.174.18" ttl="9"></hop><hop rtt="13.93" host="xe-0-0-6-eps-l29-wu-rt-0.nts.wustl.edu" ipaddr="128.252.100.125" ttl="10"></hop><hop rtt="14.27" host="eth4-17-eps-core.nts.wustl.edu" ipaddr="128.252.1.43" ttl="11"></hop><hop rtt="14.90" host="po11-gdce57-wcdc125-wu-vml-0.nts.wustl.edu" ipaddr="128.252.1.108" ttl="12"></hop><hop rtt="19.37" host="wustl.edu" ipaddr="128.252.160.5" ttl="13"></hop></trace></host><runstats><finished timestr="Sun Mar 25 20:00:33 2018" time="1522026033"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

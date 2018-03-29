@@ -1,6 +1,17 @@
 (function($) {
   "use strict"; // Start of use strict
 
+
+
+  // var toggle_underscore = setInterval(function(){
+  //   if($("#underscore").is(":visible")){
+  //     $('#underscore').css("visibility", "hidden");
+  //   }else {
+  //     $('#underscore').css("visibility", "visible");
+  //   }
+  //
+  // }, 1000);
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -39,6 +50,14 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  // Hide navbar when modals trigger
+  $('.portfolio-modal').on('show.bs.modal', function(e) {
+    $(".navbar").addClass("d-none");
+  })
+  $('.portfolio-modal').on('hidden.bs.modal', function(e) {
+    $(".navbar").removeClass("d-none");
+  })
+
 })(jQuery); // End of use strict
 
 // Google Maps Scripts
@@ -46,23 +65,47 @@ var map = null;
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-  map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
+  map.setCenter(new google.maps.LatLng(38.636497, -90.233903));
 });
+
+//function to toggle the visibility of the underscores
+(function($){
+  $.fn.visible = function() {
+      return this.css('visibility', 'visible');
+  };
+
+  $.fn.invisible = function() {
+      return this.css('visibility', 'hidden');
+  };
+
+  $.fn.visibilityToggle = function() {
+      return this.css('visibility', function(i, visibility) {
+          return (visibility == 'visible') ? 'hidden' : 'visible';
+      });
+  };
+
+  var toggle_visibility = setInterval(function(){
+    $("#abt_underscore").visibilityToggle();
+    $("#attn_underscore").visibilityToggle();
+  }, 500);
+})(jQuery);
+
+
 
 function init() {
   // Basic options for a simple Google Map
   // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
   var mapOptions = {
     // How zoomed in you want the map to start at (always required)
-    zoom: 15,
+    zoom: 12,
 
     // The latitude and longitude to center the map (always required)
-    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+    center: new google.maps.LatLng(38.636497, -90.233903), // St. Louis University
 
     // Disables the default Google Maps UI components
     disableDefaultUI: true,
-    scrollwheel: false,
-    draggable: false,
+    scrollwheel: true,
+    draggable: true,
 
     // How you would like to style the map.
     // This is where you would paste any style found on Snazzy Maps.
@@ -86,7 +129,7 @@ function init() {
       "featureType": "road.highway",
       "elementType": "geometry.fill",
       "stylers": [{
-        "color": "#000000"
+        "color": "#00FF00"
       }, {
         "lightness": 17
       }]
@@ -94,7 +137,7 @@ function init() {
       "featureType": "road.highway",
       "elementType": "geometry.stroke",
       "stylers": [{
-        "color": "#000000"
+        "color": "#00FF00"
       }, {
         "lightness": 29
       }, {
@@ -104,7 +147,7 @@ function init() {
       "featureType": "road.arterial",
       "elementType": "geometry",
       "stylers": [{
-        "color": "#000000"
+        "color": "#00FF00"
       }, {
         "lightness": 18
       }]
@@ -112,7 +155,7 @@ function init() {
       "featureType": "road.local",
       "elementType": "geometry",
       "stylers": [{
-        "color": "#000000"
+        "color": "#00FF00"
       }, {
         "lightness": 16
       }]
@@ -185,7 +228,7 @@ function init() {
 
   // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
   var image = 'img/map-marker.svg';
-  var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+  var myLatLng = new google.maps.LatLng(38.636497, -90.233903);
   var beachMarker = new google.maps.Marker({
     position: myLatLng,
     map: map,
