@@ -50,17 +50,17 @@ Most of the maps contain the router that connects me with the rest of the Intern
 To get a sense of these maps as dynamic constellations, it is advised that you download Zenmap and the folders in the `zenmap-scans` directory on this site. Then, you will be able to interact with each node in the map. Instructions for this method are below.
 
 #### Walkthrough
-1. [Download Nmap and Zenmap](https://nmap.org/download.html). The Nmap download package comes with Zenmap.
-2. Install it following [these instructions](https://nmap.org/book/install.html) for your operating system.
-3. Start the Zenmap application. I had some trouble doing starting Zenmap right from the `Applications` folder on Mac OSX High Sierra. When I run the application, I followed these steps:
-  1. Open Finder.
-  2. Navigate to the `Applications` folder.
-  3. Right-click on the Zenmap icon. Click `Show Contents`.
-  4. Navigate through `Contents -> MacOS`.
-  5. Open the file called `Zenmap`. It will start a terminal window. Type in your password when prompted. Zenmap will start.
-  6. In Zenmap, Click `Scan -> Open Scan`. Navigate to the location where you saved the scan folders from this site.
-  7. When you have found the desired folder (i.e. `netflix-scans`), select it and click `Open Directory`.
-  8. Click the `Topology` tab. You can now interact with my scan results.
+1.  [Download Nmap and Zenmap](https://nmap.org/download.html). The Nmap download package comes with Zenmap.
+2.  Install it following [these instructions](https://nmap.org/book/install.html) for your operating system.
+3.  Start the Zenmap application. I had some trouble doing starting Zenmap right from the `Applications` folder on Mac OSX High Sierra. When I run the application, I followed these steps:
+    1. Open Finder.
+    2. Navigate to the `Applications` folder.
+    3. Right-click on the Zenmap icon. Click `Show Contents`.
+    4. Navigate through `Contents -> MacOS`.
+    5. Open the file called `Zenmap`. It will start a terminal window. Type in your password when prompted. Zenmap will start.
+    6. In Zenmap, Click `Scan -> Open Scan`. Navigate to the location where you saved the scan folders from this site.
+    7. When you have found the desired folder (i.e. `netflix-scans`), select it and click `Open Directory`.
+    8. Click the `Topology` tab. You can now interact with my scan results.
 
 
 Zenmap legend:
