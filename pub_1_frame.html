@@ -1,4 +1,4 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"              "https://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <html lang="en">
 <head>
 
@@ -11,8 +11,8 @@
   <!-- Custom fonts for this template -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
-  <link href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin" rel="stylesheet" type="text/css" >
+  <link href="https://fonts.googleapis.com/css?family=Cabin:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css" >
 
   <!-- Override bootstrap and custom styles for just this page -->
   <style>
@@ -30,7 +30,7 @@
         <!-- <img src="img/drawing.svg"></img>
         <img src="img/drawing-1.svg"></img> -->
         <!-- first path is right, second is left, third is middle -->
-        <svg id="model-thread" xmlns="http://www.w3.org/2000/svg" align="center" width="400px" height="400px" viewBox="0 0 400 400">
+        <svg id="model-thread" xmlns="https://www.w3.org/2000/svg" align="center" width="400px" height="400px" viewBox="0 0 400 400">
 
           <text visibility="hidden" x="5" y="15" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:3s">
             time
@@ -121,64 +121,6 @@
           </text>
 
         </svg>
-        <svg id="model-fork" xmlns="http://www.w3.org/2000/svg" align="center" width="400px" height="400px" viewBox="0 0 400 400">
-
-          <defs>
-            <marker id="arrow-time" markerWidth="10" markerHeight="10" refX="0" refY="0" orient="auto" markerUnits="strokeWidth">
-              <path d="M0,0 L0,4 L7,2 z" style="stroke:blue" />
-            </marker>
-          </defs>
-
-          <text visibility="hidden" x="5" y="15" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:15s">
-            time
-          </text>
-
-          <!-- time line -->
-          <path class="path"id="draw-time" fill="none" stroke-width="3" style="stroke:blue; animation-delay:16s; marker-end:url(#arrow-time);"
-          d="M 0,0 V 300" />
-          <path class="dashed" id="draw-time-black" fill="none" stroke-width="3" style="stroke:black; animation-delay:16s;"
-          d="M 0,0 V 300" />
-
-          <!-- p1 -->
-          <text visibility="hidden" x="55" y="10" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:16s">
-            P1
-          </text>
-
-          <path id="draw-2" fill="none" stroke="green" stroke-width="3" style="animation-delay:16s;"
-          d="M 50,0 V 100" />
-          <circle visibility="hidden" cx="50" cy="100" r="5" style="stroke: black; fill: red; animation-delay:18s"/>
-
-          <text visibility="hidden" x="55" y="100" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:18.5s">
-            fork()
-          </text>
-
-          <!-- p2 -->
-          <text visibility="hidden" x="155" y="100" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:19s">
-            P2
-          </text>
-
-          <path id="draw-3" fill="none" stroke="green" stroke-width="3" style="animation-delay:19s;"
-          d="M 150,100 V 200" />
-          <circle visibility="hidden" cx="150" cy="200" r="5" style="stroke: black; fill: red; animation-delay:21s" />
-
-          <text visibility="hidden" x="155" y="200" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:21.5s">
-            fork()
-          </text>
-
-          <!-- p3 -->
-          <text visibility="hidden" x="255" y="200" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:22s">
-            P3
-          </text>
-
-          <path id="draw-4" fill="none" stroke="green" stroke-width="3" style="animation-delay:22s;"
-          d="M 250,200 V 300" />
-          <circle visibility="hidden" cx="250" cy="300" r="5" style="stroke: black; fill: red; animation-delay:24s" />
-
-          <!-- join with P2 and P1 -->
-          <!-- <text visibility="hidden" x="255" y="300" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:24.5s">
-
-          </text> -->
-        </svg>
       <!-- </div> -->
        <button class="btn" onclick="restartAnimations()" style="margin:15px;">Restart</button>
     </div>
@@ -191,21 +133,8 @@
         <p class="item-intro" style="font-family: Ubuntu; font-size:18; color:green">
         The multi-threaded APU at work in the human...
         </p>
-        <p style="font-family:Ubuntu; margin-left: 8px; font-size:14; color:green">
-          P1: You concentrate on reading an academic journal.
-          <br>
-          thread(): Your phone vibrates.
-          <br>
-          T1: You continue thinking about the journal, at least in the back of your head.
-          <br>
-          T2: You attend to your phone by looking at the now-lit screen.
-          <br>
-          T3: You realize the distraction and scold yourself for your lack of attention discipline.
-          <br>
-          join(): You decide to attend to the journal again, discarding attention for the distractions.  P1 resumes.
-        </p>
         <br>
-        <p>The initial line (P1) represents the user's main thought process.  At that point, there is only one process running.  The user could be in a state of deep attention toward one thing.  Then, two more processes start in the background to deal with 'distractions'.  They require attention.  The main process is then split.  The divergence of the main line into three separate paths represents this split.  For the APU, this requires multi-threading.  Each process has access to the same underlying system resources, and each process has a specific start point founded in the original process.  They perform their own operations, sometimes modifying the same underlying data.  When two threads mutate the same object, the program may err.  It cannot trust the integrity of its output because two different functions use and modify the same resources for different purposes.  As the processes conclude, the APU must join them together, which is an arduous task for the APU if it also needs to understand how the processes interacted with the system data.  The speed and correctness of the joining phase depends on how well each thread isolated and shared its data.  After the joining function succeeds, the processor returns to a solitary thread, a state of deep attention on one item.
+        <p>The initial line (P1) represents the user's main thought process.  At that point, there is only one process running.  The user could be in a state of deep attention toward one thing.  For example, the user focuses on reading a dense academic journal.  Then, two more processes start in the background to deal with 'distractions', such as a phone vibrating upon receipt of a text message.  The phone demands attention.  The main process is then split into three: the <span style="color:green;">first</span> branch of attention continues to focus on the academic journal, the <span style="color:green;">second</span> attends to the phone's now-lit screen, and the <span style="color:green;">third</span> is a realization of the distraction and the work required to either respond to the message or redirect one's attention back toward the academic journal.  The divergence of the main line into three separate paths represents this split.  For the APU, this requires multi-threading.  Each process has access to the same underlying system resources, and each process has a specific start point founded in the original process.  They perform their own operations, sometimes modifying the same underlying data.  When two threads mutate the same object, the program may err.  It cannot trust the integrity of its output because two different functions use and modify the same resources for different purposes.  As the processes conclude, the APU must join them together, which is an arduous task for the APU if it also needs to understand how the processes interacted with the system data while they were on their respective paths.  The speed and correctness of the joining phase depends on how well each thread isolated and shared its data.  After the joining function succeeds, the processor returns to a <span style="color:green;">solitary thread</span>, a state of deep attention on one item.  The deep attention toward the academic journal resumes.
         </p>
         <p>This progression--and its problems--mimics that of parallel computing.  When threads in a multi-threaded program access the same system data, they must obtain a `lock` on the data before operating on it.  This mechanism prevents other threads from altering the data while the live thread acts.  There are several different ways to implement data locking.  Some are very fast, and some are very slow in different use cases.
         </p>
@@ -215,20 +144,71 @@
         <p class="item-intro" style="font-family: Ubuntu; font-size:18; color: green;">
         The forked APU at work in the human...
         </p>
-        <p style="font-family:Ubuntu; margin-left: 8px; font-size:14; color:green">
-          P1: You concentrate on reading an academic journal.
-          <br>
-          fork(): Your phone vibrates.  P1 pauses.
-          <br>
-          P2: You look at your phone screen.
-          <br>
-          fork(): You realize you are distracted.  P2 pauses.
-          <br>
-          P3: You decide to act on the realization and clear the previous processes.
-        </p>
+        <div class="container" align="center" width="100%" height="500px" padding-top="20px">
+          <svg id="model-fork" xmlns="https://www.w3.org/2000/svg" align="center" width="400px" height="400px" viewBox="0 0 400 400">
+
+            <defs>
+              <marker id="arrow-time" markerWidth="10" markerHeight="10" refX="0" refY="0" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,0 L0,4 L7,2 z" style="stroke:blue" />
+              </marker>
+            </defs>
+
+            <text visibility="hidden" x="5" y="15" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:15s">
+              time
+            </text>
+
+            <!-- time line -->
+            <path class="path"id="draw-time" fill="none" stroke-width="3" style="stroke:blue; animation-delay:16s; marker-end:url(#arrow-time);"
+            d="M 0,0 V 300" />
+            <path class="dashed" id="draw-time-black" fill="none" stroke-width="3" style="stroke:black; animation-delay:16s;"
+            d="M 0,0 V 300" />
+
+            <!-- p1 -->
+            <text visibility="hidden" x="55" y="10" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:16s">
+              P1
+            </text>
+
+            <path id="draw-2" fill="none" stroke="green" stroke-width="3" style="animation-delay:16s;"
+            d="M 50,0 V 100" />
+            <circle visibility="hidden" cx="50" cy="100" r="5" style="stroke: black; fill: red; animation-delay:18s"/>
+
+            <text visibility="hidden" x="55" y="100" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:18.5s">
+              fork()
+            </text>
+
+            <!-- p2 -->
+            <text visibility="hidden" x="155" y="100" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:19s">
+              P2
+            </text>
+
+            <path id="draw-3" fill="none" stroke="green" stroke-width="3" style="animation-delay:19s;"
+            d="M 150,100 V 200" />
+            <circle visibility="hidden" cx="150" cy="200" r="5" style="stroke: black; fill: red; animation-delay:21s" />
+
+            <text visibility="hidden" x="155" y="200" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:21.5s">
+              fork()
+            </text>
+
+            <!-- p3 -->
+            <text visibility="hidden" x="255" y="200" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:22s">
+              P3
+            </text>
+
+            <path id="draw-4" fill="none" stroke="green" stroke-width="3" style="animation-delay:22s;"
+            d="M 250,200 V 300" />
+            <circle visibility="hidden" cx="250" cy="300" r="5" style="stroke: black; fill: red; animation-delay:24s" />
+
+            <!-- join with P2 and P1 -->
+            <!-- <text visibility="hidden" x="255" y="300" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:24.5s">
+
+            </text> -->
+          </svg>
+        <!-- </div> -->
+         <button class="btn" onclick="restartAnimations()" style="margin:15px;">Restart</button>
+        </div>
         <br>
-        <p>Again, the initial line represents the user's main thought process with one process running.  When a 'distraction' arises that requires the user's attention, the process pauses and runs in the background.  The dashed lines represent this daemon process activity.  The process forks to attend to the 'distraction'.  The forked process spawns an entirely new process.  It does not share the same resources as the original process.  It runs as if it were the only thing on the system.  The pattern repeats when another distracting process begins.  All other processes run in the background, but without conducting any activity.  When a forked process concludes, control of system resources is handed back to the previous process.  The APU must manage the processes' scheduling and resources.</p>
-        <p>This forking process is also implemented in computer operating systems.  It differs from multi-threading in that it always isolates system resources for each process.  Each process acts as its own program.  Instead of splitting into multiple branches as is the case with the threading, calling fork() gives birth to an independent program.  The new program executes and then returns to the parent process.  Because modern computers have several processing units, they can run forked programs at the same time, similar to the parallel nature of multi-threading.  However, spawning large numbers of forked processes is time-consuming because the computer needs to create copies of the program for each new process.  If the programmer needs to perform numerous independent actions at once, it is therefore advisable to implement threading.
+        <p>Again, the initial line represents the user's main thought process with one process running.  The user focuses on the academic journal.  When the user's phone vibrates and a 'distraction' arises that requires the user's attention, the main process of reading pauses and runs in the background while the user attends to the notification.  In this sense, the process forks to attend to the 'distraction'.  The forked process spawns an entirely new process.  It does not share the same resources as the original process.  It runs as if it were the only thing on the user's mind.  The pattern repeats when another distracting process begins: in this case, the distraction from the distraction, in which the user takes note of his lack of focus.  All other processes run in the background, but without conducting any activity.  When a forked process concludes, control of system resources is handed back to the previous process.  The APU must manage the processes' scheduling and resources.</p>
+        <p>This forking process is also implemented in computer operating systems.  It differs from multi-threading in that it always isolates system resources for each process.  Each process acts as its own program.  Instead of splitting into multiple branches as is the case with the threading, calling <code>fork()</code> gives birth to an independent program.  The new program executes and then returns to the parent process.  Because modern computers have several processing units, they can run forked programs at the same time, similar to the parallel nature of multi-threading.  However, spawning large numbers of forked processes is time-consuming because the computer needs to create copies of the program for each new process.  If the programmer needs to perform numerous independent actions at once, it is therefore advisable to implement threading.
         </p>
         <br>
         <p>In each case, attention is a mechanism.  It is not a commodity or resource.  On the contrary, it manages other resources.</p>

@@ -1,6 +1,6 @@
 # Network Constellations
 
-I used [Zenmap](https://nmap.org/zenmap/) to produce four network maps. [Nmap](https://nmap.org), Zenmap's originator is a tool commonly used by hackers to *map* a network of computers. Zenmap abstracts Nmap by providing a GUI, or graphical user interface, to its users. For that reason, it is often considered childish by the more hardcore hackers who prefer a black terminal screen with green text to be the only true way to hack apart a system. In terms of a computer network, a map discloses which computers are connected to each other. It gives an authorized administrator (or unauthorized hacker) an idea of how the network is laid out. While both tools provide a powerful toolset for hacking, I used a very basic functionality of Zenmap to trace the network route between me and a variety of other hosts. Anyone can do this with the Linux command `traceroute`, but Zenmap produces beautifully interactive maps with every scanning session.
+I used [Zenmap](https://nmap.org/zenmap/) to produce four network maps. [Nmap](https://nmap.org), Zenmap's originator, is a tool commonly used by hackers to *map* a network of computers. Zenmap abstracts Nmap by providing a GUI, or graphical user interface, to its users. For that reason, it is often considered childish by the more hardcore hackers who prefer a black terminal screen with green text to be the only true way to hack apart a system. In terms of a computer network, a map discloses which computers are connected to each other. It gives an authorized administrator (or unauthorized hacker) an idea of how the network is laid out. While both tools provide a powerful toolset for hacking, I used a very basic functionality of Zenmap to trace the network route between me and a variety of other hosts. Anyone can do this with the Linux command `traceroute`, but Zenmap produces beautifully interactive maps with every scanning session.
 The maps give viewers a unique perspective on how the Internet behind their computers is structured. They give a virtual image of how "close" one is to a website by illustrating the number of "hops" between computers. However, the maps do not adhere to any physical model of where the Internet's cables lie. In fact, the maps do not demand any kind of rigid structure. In the Zenmap topography, the user can click on any node in the network to center the map around it. The rest of the map is animated and redrawn with the selected node at the heart. The Zenmaps are dynamic constellations of a sliver of the Internet.
 
 ### What is the Internet?
@@ -38,44 +38,82 @@ These factors produce an overload of information for the common user. Since it i
 
 ### The network constellations
 
-As noted above, the maps are based on traceroute results. Traceroute maxes out at 30 hops by default, and I used this default value to keep the maps easy to visualize. They are essentially visual representations of how far away my computer is from the computer that hosts each of the websites.
+As noted above, the maps are based on traceroute results. Traceroute maxes out at 30 'hops' by default, and I used this default value to keep the maps easy to visualize. They are essentially visual representations of how far away my computer is from the computer that hosts each of the websites.
+
+A 'hop' is measured when one computer on the Internet forwards data to another computer.
 
 I noticed that a lot of my Internet traffic went through an ISP called Cogent Communications. Here is a map of their network brains and neurons.
 ![CogentCo Map](cogentco-netmap.jpg)
 
-Most of the maps contain my wifi router at the center. 4 'hops' away, you will find me, represented by the black dot labeled `localhost`.
+Most of the maps contain the router that connects me with the rest of the Internet at the center. All of my Internet traffic follows the same path to that router before diverging to find its destination. 5 hops away, you will find me, represented by the black dot labeled `localhost`.
+
+To get a sense of these maps as dynamic constellations, it is advised that you download Zenmap and the folders in the `zenmap-scans` directory on this site. Then, you will be able to interact with each node in the map. Instructions for this method are below.
+
+#### Walkthrough
+1.  [Download Nmap and Zenmap](https://nmap.org/download.html). The Nmap download package comes with Zenmap.
+2.  Install it following [these instructions](https://nmap.org/book/install.html) for your operating system.
+3.  Start the Zenmap application. I had some trouble doing starting Zenmap right from the `Applications` folder on Mac OSX High Sierra. When I run the application, I followed these steps:
+    1. Open Finder.
+    2. Navigate to the `Applications` folder.
+    3. Right-click on the Zenmap icon. Click `Show Contents`.
+    4. Navigate through `Contents -> MacOS`.
+    5. Open the file called `Zenmap`. It will start a terminal window. Type in your password when prompted. Zenmap will start.
+    6. In Zenmap, Click `Scan -> Open Scan`. Navigate to the location where you saved the scan folders from this site.
+    7. When you have found the desired folder (i.e. `netflix-scans`), select it and click `Open Directory`.
+    8. Click the `Topology` tab. You can now interact with my scan results.
 
 
 Zenmap legend:
+
 ![Zenmap legend image](zenmap-legend.png)
 
 #### Some personal history
 These maps connect me to some sites I have recently visited. The world around me.
-<object data="https://github.com/mgottsacker34/digital_native/blob/gh-pages/pubication-3-files/maps/scan-matt-0.pdff" type="application/pdf" width="700px" height="700px">
+<!-- <object data="https://github.com/mgottsacker34/digital_native/blob/gh-pages/pubication-3-files/maps/scan-matt-0.pdff" type="application/pdf" width="700px" height="700px">
     <embed src="https://github.com/mgottsacker34/digital_native/blob/gh-pages/pubication-3-files/maps/scan-matt-0.pdf">
         This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/mgottsacker34/digital_native/blob/gh-pages/pubication-3-files/maps/scan-matt-0.pdf">Download PDF</a>.</p>
     </embed>
-</object>
+</object> -->
+Me (`localhost`) at the center:
 ![personal scan 0](maps/scan-matt-0.pdf)
+
+Same as above, but fisheye perspective:
 ![personal scan 1](maps/scan-matt-1.pdf)
+
+Common router at the center:
 ![personal scan 2](maps/scan-matt-2.pdf)
 
 #### St. Louis companies
+How close is St. Louis? All of these companies and organizations are based in St. Louis, but their locations on the Internet are sometimes very far.
+
+Fisheye perspective:
 ![stl scan 0](maps/scan-stl-0.pdf)
+
+More of a web perspective:
 ![stl scan 1](maps/scan-stl-1.pdf)
 
 #### World governments
+How far are other countries, really? Most countries are not many hops away, as it turns out.
+
+Me at the center:
 ![world scan 0](maps/scan-world-0.pdf)
+
+The United States White House at the center:
 ![world scan 1](maps/scan-world-1.pdf)
 
 #### Where is Netflix?
 This map demonstrates the active form of the Internet. With every scan, I hit `www.netflix.com` or `netflix.com` as the endpoint. With only a handful of requests over the span of an hour, it was often traced to different locations. I chose to map Netflix because it is a major content provider, and the way it engineers its content distribution is innovative and interesting. In order to stream large files to enormous numbers of users, Netflix needs to be dynamic. It must respond to load changes and always try to serve content closest to the user to ensure a high quality of service.
+
+My common router at the center:
 ![netflix scan 0](maps/scan-netflix-0.pdf)
+
+Fisheye perspective:
 ![netflix scan 1](maps/scan-netflix-1.pdf)
 
-## Further...
+---
+## Further (on Internet security)...
 
-In **A Burglar's Guide to the City**, Geoff Manaugh argues that cities get the crime for which they are designed. The Internet is founded in the fast exchange of information for *free* and with a certain promise of *anonymity*. The anonymity of the early Internet was possible because people didn't know how to hack it. Once the experts figured out the Internet offered no security, they had to add security on top of it. That trend continues today.
+In **A Burglar's Guide to the City**, Geoff Manaugh argues that cities get the crime for which they are designed. The Internet is founded in the fast exchange of information for *free* and with a certain promise of *anonymity*. The anonymity of the early Internet was possible because people didn't know how to hack it. Once the experts figured out the Internet offered no security, they had to add security on top of it. Security became a feature rather than a requirement. That trend continues today in many spaces.
 
 Find problem, implement patch, repeat.
 
