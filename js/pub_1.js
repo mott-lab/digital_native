@@ -1,9 +1,22 @@
-function restartAnimations(){
-  console.log("restartAnimations called");
-  var svgDoc = document.getElementById('model-thread');
-  svgDoc.forceRedraw();
+function restartThreadAnimation() {
+  console.log("restartThreadAnimation called.");
+  console.log("restartForkAnimation called.");
+  var container = document.getElementById("model-thread");
+  var content = container.innerHTML;
+  container.innerHTML = content;
+  console.log("Thread Animation refreshed.");
+  // var svgDoc = document.getElementById('model-thread');
+  // svgDoc.forceRedraw();
   // svgDoc.clearInterval();
   // SVGRoot.pauseAnimations();
+}
+
+function restartForkAnimation() {
+  console.log("restartForkAnimation called.");
+  var container = document.getElementById("model-fork");
+  var content = container.innerHTML;
+  container.innerHTML = content;
+  console.log("Fork Animation refreshed.");
 }
 
 (function($){
