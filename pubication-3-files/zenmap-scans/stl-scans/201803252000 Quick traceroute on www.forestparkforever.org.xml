@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522026019" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 20:00:19 2018" args="nmap -sn --traceroute www.forestparkforever.org"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 20:00 CDT
+Nmap scan report for www.forestparkforever.org (198.49.23.145)
+Host is up (0.046s latency).
+Other addresses for www.forestparkforever.org (not scanned): 198.185.159.144 198.185.159.145 198.49.23.144
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   3.43 ms  HG6Box (192.168.1.1)
+2   ...
+3   10.64 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   12.19 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   17.21 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   13.35 ms 38.140.99.113
+7   19.34 ms be2388.ccr42.ord01.atlas.cogentco.com (154.54.80.185)
+8   18.88 ms be2766.ccr41.ord03.atlas.cogentco.com (154.54.46.178)
+9   23.51 ms telia.ord03.atlas.cogentco.com (154.54.12.34)
+10  43.40 ms nyk-bb3-link.telia.net (80.91.246.163)
+11  41.89 ms ash-bb3-link.telia.net (62.115.141.244)
+12  41.83 ms ash-b1-link.telia.net (80.91.248.157)
+13  42.75 ms akamai-ic-317124-ash-b1.c.telia.net (62.115.146.141)
+14  44.07 ms a209-200-144-194.deploy.static.akamaitechnologies.com (209.200.144.194)
+15  46.14 ms a209-200-144-197.deploy.static.akamaitechnologies.com (209.200.144.197)
+16  46.12 ms a209-200-169-222.deploy.static.akamaitechnologies.com (209.200.169.222)
+17  45.59 ms 198.49.23.145
+
+Nmap done: 1 IP address (1 host up) scanned in 3.32 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="198.49.23.145"></address><hostnames><hostname type="user" name="www.forestparkforever.org"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="" proto="icmp"><hop rtt="3.43" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="10.64" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="12.19" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="17.21" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="13.35" host="" ipaddr="38.140.99.113" ttl="6"></hop><hop rtt="19.34" host="be2388.ccr42.ord01.atlas.cogentco.com" ipaddr="154.54.80.185" ttl="7"></hop><hop rtt="18.88" host="be2766.ccr41.ord03.atlas.cogentco.com" ipaddr="154.54.46.178" ttl="8"></hop><hop rtt="23.51" host="telia.ord03.atlas.cogentco.com" ipaddr="154.54.12.34" ttl="9"></hop><hop rtt="43.40" host="nyk-bb3-link.telia.net" ipaddr="80.91.246.163" ttl="10"></hop><hop rtt="41.89" host="ash-bb3-link.telia.net" ipaddr="62.115.141.244" ttl="11"></hop><hop rtt="41.83" host="ash-b1-link.telia.net" ipaddr="80.91.248.157" ttl="12"></hop><hop rtt="42.75" host="akamai-ic-317124-ash-b1.c.telia.net" ipaddr="62.115.146.141" ttl="13"></hop><hop rtt="44.07" host="a209-200-144-194.deploy.static.akamaitechnologies.com" ipaddr="209.200.144.194" ttl="14"></hop><hop rtt="46.14" host="a209-200-144-197.deploy.static.akamaitechnologies.com" ipaddr="209.200.144.197" ttl="15"></hop><hop rtt="46.12" host="a209-200-169-222.deploy.static.akamaitechnologies.com" ipaddr="209.200.169.222" ttl="16"></hop><hop rtt="45.59" host="" ipaddr="198.49.23.145" ttl="17"></hop></trace></host><runstats><finished timestr="Sun Mar 25 20:00:23 2018" time="1522026023"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522035978" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 22:46:18 2018" args="nmap -sn --traceroute www.thaigov.go.th"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 22:46 CDT
+Nmap scan report for www.thaigov.go.th (103.55.140.10)
+Host is up (0.28s latency).
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   3.66 ms   HG6Box (192.168.1.1)
+2   ...
+3   11.53 ms  dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   12.78 ms  crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   15.09 ms  bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   15.38 ms  38.140.99.113
+7   21.71 ms  be2347.ccr22.mci01.atlas.cogentco.com (154.54.80.173)
+8   29.30 ms  be3036.ccr22.den01.atlas.cogentco.com (154.54.31.89)
+9   42.60 ms  be3047.ccr21.elp01.atlas.cogentco.com (154.54.1.125)
+10  54.86 ms  be2929.ccr31.phx01.atlas.cogentco.com (154.54.42.65)
+11  61.82 ms  be2932.ccr42.lax01.atlas.cogentco.com (154.54.45.162)
+12  61.37 ms  be3360.ccr41.lax04.atlas.cogentco.com (154.54.25.150)
+13  228.97 ms 38.142.35.106
+14  234.09 ms in-addr.net (180.180.255.193)
+15  245.26 ms in-addr.net (203.190.251.33)
+16  253.10 ms ten-gi-0-1-0-1-cwt-gw-01.totisp.net (203.190.251.102)
+17  261.18 ms inet.thai.summit.tower.net (180.180.249.162)
+18  260.63 ms 203-150-215-250.inter.net.th (203.150.215.250)
+19  249.42 ms siemens-l2tpv3.inter.net.th (203.151.72.110)
+20  252.24 ms 103.55.140.10
+
+Nmap done: 1 IP address (1 host up) scanned in 5.23 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="103.55.140.10"></address><hostnames><hostname type="user" name="www.thaigov.go.th"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="80" proto="tcp"><hop rtt="3.66" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="11.53" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="12.78" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="15.09" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="15.38" host="" ipaddr="38.140.99.113" ttl="6"></hop><hop rtt="21.71" host="be2347.ccr22.mci01.atlas.cogentco.com" ipaddr="154.54.80.173" ttl="7"></hop><hop rtt="29.30" host="be3036.ccr22.den01.atlas.cogentco.com" ipaddr="154.54.31.89" ttl="8"></hop><hop rtt="42.60" host="be3047.ccr21.elp01.atlas.cogentco.com" ipaddr="154.54.1.125" ttl="9"></hop><hop rtt="54.86" host="be2929.ccr31.phx01.atlas.cogentco.com" ipaddr="154.54.42.65" ttl="10"></hop><hop rtt="61.82" host="be2932.ccr42.lax01.atlas.cogentco.com" ipaddr="154.54.45.162" ttl="11"></hop><hop rtt="61.37" host="be3360.ccr41.lax04.atlas.cogentco.com" ipaddr="154.54.25.150" ttl="12"></hop><hop rtt="228.97" host="" ipaddr="38.142.35.106" ttl="13"></hop><hop rtt="234.09" host="in-addr.net" ipaddr="180.180.255.193" ttl="14"></hop><hop rtt="245.26" host="in-addr.net" ipaddr="203.190.251.33" ttl="15"></hop><hop rtt="253.10" host="ten-gi-0-1-0-1-cwt-gw-01.totisp.net" ipaddr="203.190.251.102" ttl="16"></hop><hop rtt="261.18" host="inet.thai.summit.tower.net" ipaddr="180.180.249.162" ttl="17"></hop><hop rtt="260.63" host="203-150-215-250.inter.net.th" ipaddr="203.150.215.250" ttl="18"></hop><hop rtt="249.42" host="siemens-l2tpv3.inter.net.th" ipaddr="203.151.72.110" ttl="19"></hop><hop rtt="252.24" host="" ipaddr="103.55.140.10" ttl="20"></hop></trace></host><runstats><finished timestr="Sun Mar 25 22:46:23 2018" time="1522035983"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

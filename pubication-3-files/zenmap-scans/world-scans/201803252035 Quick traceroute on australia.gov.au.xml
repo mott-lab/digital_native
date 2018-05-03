@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522028156" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 20:35:56 2018" args="nmap -sn --traceroute australia.gov.au"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 20:35 CDT
+Nmap scan report for australia.gov.au (13.210.163.207)
+Host is up (0.28s latency).
+Other addresses for australia.gov.au (not scanned): 54.252.130.223
+rDNS record for 13.210.163.207: ec2-13-210-163-207.ap-southeast-2.compute.amazonaws.com
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   2.83 ms   HG6Box (192.168.1.1)
+2   ...
+3   13.92 ms  dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   16.27 ms  crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   18.73 ms  bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   17.89 ms  bbr01olvemo-bue-3.olve.mo.charter.com (96.34.0.14)
+7   25.29 ms  bbr02chcgil-bue-2.chcg.il.charter.com (96.34.0.12)
+8   17.91 ms  prr01chcgil-bue-4.chcg.il.charter.com (96.34.3.11)
+9   17.58 ms  209-8-108-113.static.pccwglobal.net (209.8.108.113)
+10  ...
+11  174.65 ms 63-218-251-238.static.pccwglobal.net (63.218.251.238)
+12  160.33 ms 63-218-251-238.static.pccwglobal.net (63.218.251.238)
+13  ... 14
+15  184.33 ms 52.95.30.30
+16  210.24 ms 52.95.30.58
+17  263.26 ms 54.239.43.116
+18  244.12 ms 54.239.43.116
+19  263.40 ms 52.95.36.49
+20  236.31 ms 52.95.36.33
+21  256.82 ms 52.95.36.105
+22  231.85 ms 52.95.36.121
+23  ... 25
+26  246.52 ms ec2-13-210-163-207.ap-southeast-2.compute.amazonaws.com (13.210.163.207)
+
+Nmap done: 1 IP address (1 host up) scanned in 4.32 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="13.210.163.207"></address><hostnames><hostname type="user" name="australia.gov.au"></hostname><hostname type="PTR" name="ec2-13-210-163-207.ap-southeast-2.compute.amazonaws.com"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="443" proto="tcp"><hop rtt="2.83" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="13.92" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="16.27" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="18.73" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="17.89" host="bbr01olvemo-bue-3.olve.mo.charter.com" ipaddr="96.34.0.14" ttl="6"></hop><hop rtt="25.29" host="bbr02chcgil-bue-2.chcg.il.charter.com" ipaddr="96.34.0.12" ttl="7"></hop><hop rtt="17.91" host="prr01chcgil-bue-4.chcg.il.charter.com" ipaddr="96.34.3.11" ttl="8"></hop><hop rtt="17.58" host="209-8-108-113.static.pccwglobal.net" ipaddr="209.8.108.113" ttl="9"></hop><hop rtt="174.65" host="63-218-251-238.static.pccwglobal.net" ipaddr="63.218.251.238" ttl="11"></hop><hop rtt="160.33" host="63-218-251-238.static.pccwglobal.net" ipaddr="63.218.251.238" ttl="12"></hop><hop rtt="184.33" host="" ipaddr="52.95.30.30" ttl="15"></hop><hop rtt="210.24" host="" ipaddr="52.95.30.58" ttl="16"></hop><hop rtt="263.26" host="" ipaddr="54.239.43.116" ttl="17"></hop><hop rtt="244.12" host="" ipaddr="54.239.43.116" ttl="18"></hop><hop rtt="263.40" host="" ipaddr="52.95.36.49" ttl="19"></hop><hop rtt="236.31" host="" ipaddr="52.95.36.33" ttl="20"></hop><hop rtt="256.82" host="" ipaddr="52.95.36.105" ttl="21"></hop><hop rtt="231.85" host="" ipaddr="52.95.36.121" ttl="22"></hop><hop rtt="246.52" host="ec2-13-210-163-207.ap-southeast-2.compute.amazonaws.com" ipaddr="13.210.163.207" ttl="26"></hop></trace></host><runstats><finished timestr="Sun Mar 25 20:36:01 2018" time="1522028161"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

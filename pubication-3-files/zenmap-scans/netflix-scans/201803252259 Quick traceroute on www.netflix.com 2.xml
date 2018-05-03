@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522036760" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 22:59:20 2018" args="nmap -sn --traceroute www.netflix.com"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 22:59 CDT
+Nmap scan report for www.netflix.com (34.213.151.116)
+Host is up (0.095s latency).
+Other addresses for www.netflix.com (not scanned): 35.160.7.30 54.69.239.253 34.210.107.195 34.209.22.202 54.71.93.100 35.160.112.124 34.209.185.102
+rDNS record for 34.213.151.116: ec2-34-213-151-116.us-west-2.compute.amazonaws.com
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT       ADDRESS
+1   3.62 ms   HG6Box (192.168.1.1)
+2   ...
+3   9.62 ms   dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   15.76 ms  crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   17.11 ms  bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   45.92 ms  bbr01dllstx-bue-805.dlls.tx.charter.com (96.34.0.17)
+7   81.38 ms  bbr01rvsdca-bue-6.rvsd.ca.charter.com (96.34.0.21)
+8   84.78 ms  bbr02chcgil-tge-0-2-0-1.chcg.il.charter.com (96.34.3.129)
+9   84.53 ms  96-34-156-30.static.unas.mo.charter.com (96.34.156.30)
+10  80.61 ms  54.239.102.52
+11  72.29 ms  54.239.102.99
+12  96.18 ms  54.239.42.120
+13  ...
+14  126.46 ms 52.93.12.84
+15  95.18 ms  52.93.12.255
+16  113.77 ms 52.93.12.182
+17  97.17 ms  52.93.12.93
+18  94.92 ms  205.251.232.165
+19  ... 23
+24  94.68 ms  ec2-34-213-151-116.us-west-2.compute.amazonaws.com (34.213.151.116)
+
+Nmap done: 1 IP address (1 host up) scanned in 3.44 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="34.213.151.116"></address><hostnames><hostname type="user" name="www.netflix.com"></hostname><hostname type="PTR" name="ec2-34-213-151-116.us-west-2.compute.amazonaws.com"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="443" proto="tcp"><hop rtt="3.62" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="9.62" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="15.76" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="17.11" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="45.92" host="bbr01dllstx-bue-805.dlls.tx.charter.com" ipaddr="96.34.0.17" ttl="6"></hop><hop rtt="81.38" host="bbr01rvsdca-bue-6.rvsd.ca.charter.com" ipaddr="96.34.0.21" ttl="7"></hop><hop rtt="84.78" host="bbr02chcgil-tge-0-2-0-1.chcg.il.charter.com" ipaddr="96.34.3.129" ttl="8"></hop><hop rtt="84.53" host="96-34-156-30.static.unas.mo.charter.com" ipaddr="96.34.156.30" ttl="9"></hop><hop rtt="80.61" host="" ipaddr="54.239.102.52" ttl="10"></hop><hop rtt="72.29" host="" ipaddr="54.239.102.99" ttl="11"></hop><hop rtt="96.18" host="" ipaddr="54.239.42.120" ttl="12"></hop><hop rtt="126.46" host="" ipaddr="52.93.12.84" ttl="14"></hop><hop rtt="95.18" host="" ipaddr="52.93.12.255" ttl="15"></hop><hop rtt="113.77" host="" ipaddr="52.93.12.182" ttl="16"></hop><hop rtt="97.17" host="" ipaddr="52.93.12.93" ttl="17"></hop><hop rtt="94.92" host="" ipaddr="205.251.232.165" ttl="18"></hop><hop rtt="94.68" host="ec2-34-213-151-116.us-west-2.compute.amazonaws.com" ipaddr="34.213.151.116" ttl="24"></hop></trace></host><runstats><finished timestr="Sun Mar 25 22:59:23 2018" time="1522036763"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

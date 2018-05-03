@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522037389" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 23:09:49 2018" args="nmap -sn --traceroute www.slu.edu"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 23:09 CDT
+Nmap scan report for www.slu.edu (165.134.206.195)
+Host is up (0.028s latency).
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+1   3.36 ms  HG6Box (192.168.1.1)
+2   ...
+3   13.92 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   15.30 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   16.30 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   15.69 ms 38.140.99.113
+7   19.81 ms be2349.ccr41.ord01.atlas.cogentco.com (154.54.80.181)
+8   19.82 ms be2765.ccr41.ord03.atlas.cogentco.com (154.54.45.18)
+9   17.93 ms xo.ord03.atlas.cogentco.com (154.54.13.170)
+10  24.65 ms 207.88.13.134.ptr.us.xo.net (207.88.13.134)
+11  22.58 ms 207.88.12.163.ptr.us.xo.net (207.88.12.163)
+12  23.16 ms 216.156.16.187.ptr.us.xo.net (216.156.16.187)
+13  56.12 ms 209.116.34.90
+14  41.82 ms 165.134.223.26
+15  ...
+16  97.85 ms 165.134.248.106
+17  48.11 ms 165.134.206.195
+
+Nmap done: 1 IP address (1 host up) scanned in 3.25 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="165.134.206.195"></address><hostnames><hostname type="user" name="www.slu.edu"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="443" proto="tcp"><hop rtt="3.36" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="13.92" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="15.30" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="16.30" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="15.69" host="" ipaddr="38.140.99.113" ttl="6"></hop><hop rtt="19.81" host="be2349.ccr41.ord01.atlas.cogentco.com" ipaddr="154.54.80.181" ttl="7"></hop><hop rtt="19.82" host="be2765.ccr41.ord03.atlas.cogentco.com" ipaddr="154.54.45.18" ttl="8"></hop><hop rtt="17.93" host="xo.ord03.atlas.cogentco.com" ipaddr="154.54.13.170" ttl="9"></hop><hop rtt="24.65" host="207.88.13.134.ptr.us.xo.net" ipaddr="207.88.13.134" ttl="10"></hop><hop rtt="22.58" host="207.88.12.163.ptr.us.xo.net" ipaddr="207.88.12.163" ttl="11"></hop><hop rtt="23.16" host="216.156.16.187.ptr.us.xo.net" ipaddr="216.156.16.187" ttl="12"></hop><hop rtt="56.12" host="" ipaddr="209.116.34.90" ttl="13"></hop><hop rtt="41.82" host="" ipaddr="165.134.223.26" ttl="14"></hop><hop rtt="97.85" host="" ipaddr="165.134.248.106" ttl="16"></hop><hop rtt="48.11" host="" ipaddr="165.134.206.195" ttl="17"></hop></trace></host><runstats><finished timestr="Sun Mar 25 23:09:52 2018" time="1522037392"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>
