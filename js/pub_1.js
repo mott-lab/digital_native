@@ -1,9 +1,14 @@
 function restartAnimations(){
   console.log("restartAnimations called");
-  var svgDoc = document.getElementById('model-thread');
-  svgDoc.forceRedraw();
+  // var svgDoc = document.getElementById('model-thread');
+  // svgDoc.forceRedraw();
   // svgDoc.clearInterval();
   // SVGRoot.pauseAnimations();
+  // document.getElementById('modal-body').contentWindow.location.reload(true);
+  var container = document.getElementById('svg-container');
+  var content = container.innerHTML;
+  container.innerHTML = content;
+  console.log("refresh complete");
 }
 
 (function($){
