@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522037799" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 23:16:39 2018" args="nmap -sn --traceroute scarlet.group"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 23:16 CDT
+Nmap scan report for scarlet.group (107.161.31.145)
+Host is up (0.035s latency).
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   2.94 ms  HG6Box (192.168.1.1)
+2   ...
+3   11.61 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   12.19 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   19.27 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   12.65 ms 38.140.99.113
+7   19.59 ms be2388.ccr42.ord01.atlas.cogentco.com (154.54.80.185)
+8   35.65 ms be2736.ccr42.atl01.atlas.cogentco.com (154.54.5.86)
+9   ... 10
+11  35.05 ms 107.161.31.145
+
+Nmap done: 1 IP address (1 host up) scanned in 3.80 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="107.161.31.145"></address><hostnames><hostname type="user" name="scarlet.group"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="" proto="icmp"><hop rtt="2.94" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="11.61" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="12.19" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="19.27" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="12.65" host="" ipaddr="38.140.99.113" ttl="6"></hop><hop rtt="19.59" host="be2388.ccr42.ord01.atlas.cogentco.com" ipaddr="154.54.80.185" ttl="7"></hop><hop rtt="35.65" host="be2736.ccr42.atl01.atlas.cogentco.com" ipaddr="154.54.5.86" ttl="8"></hop><hop rtt="35.05" host="" ipaddr="107.161.31.145" ttl="11"></hop></trace></host><runstats><finished timestr="Sun Mar 25 23:16:43 2018" time="1522037803"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

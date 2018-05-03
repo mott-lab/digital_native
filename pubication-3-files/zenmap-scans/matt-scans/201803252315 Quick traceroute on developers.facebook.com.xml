@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522037745" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 23:15:45 2018" args="nmap -sn --traceroute developers.facebook.com"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 23:15 CDT
+Nmap scan report for developers.facebook.com (157.240.18.15)
+Host is up (0.017s latency).
+rDNS record for 157.240.18.15: edge-star-shv-02-ort2.facebook.com
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   3.14 ms  HG6Box (192.168.1.1)
+2   ...
+3   12.67 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   13.02 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   18.27 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   16.38 ms bbr01olvemo-bue-3.olve.mo.charter.com (96.34.0.14)
+7   24.17 ms bbr02chcgil-bue-2.chcg.il.charter.com (96.34.0.12)
+8   18.20 ms prr01chcgil-bue-4.chcg.il.charter.com (96.34.3.11)
+9   16.88 ms ae21.pr06.ord3.tfbnw.net (103.4.99.136)
+10  18.28 ms po141.asw04.ord3.tfbnw.net (157.240.33.178)
+11  17.63 ms po243.psw01.ord2.tfbnw.net (74.119.79.137)
+12  18.18 ms 173.252.67.237
+13  16.74 ms edge-star-shv-02-ort2.facebook.com (157.240.18.15)
+
+Nmap done: 1 IP address (1 host up) scanned in 3.13 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="157.240.18.15"></address><hostnames><hostname type="user" name="developers.facebook.com"></hostname><hostname type="PTR" name="edge-star-shv-02-ort2.facebook.com"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="" proto="icmp"><hop rtt="3.14" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="12.67" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="13.02" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="18.27" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="16.38" host="bbr01olvemo-bue-3.olve.mo.charter.com" ipaddr="96.34.0.14" ttl="6"></hop><hop rtt="24.17" host="bbr02chcgil-bue-2.chcg.il.charter.com" ipaddr="96.34.0.12" ttl="7"></hop><hop rtt="18.20" host="prr01chcgil-bue-4.chcg.il.charter.com" ipaddr="96.34.3.11" ttl="8"></hop><hop rtt="16.88" host="ae21.pr06.ord3.tfbnw.net" ipaddr="103.4.99.136" ttl="9"></hop><hop rtt="18.28" host="po141.asw04.ord3.tfbnw.net" ipaddr="157.240.33.178" ttl="10"></hop><hop rtt="17.63" host="po243.psw01.ord2.tfbnw.net" ipaddr="74.119.79.137" ttl="11"></hop><hop rtt="18.18" host="" ipaddr="173.252.67.237" ttl="12"></hop><hop rtt="16.74" host="edge-star-shv-02-ort2.facebook.com" ipaddr="157.240.18.15" ttl="13"></hop></trace></host><runstats><finished timestr="Sun Mar 25 23:15:48 2018" time="1522037748"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

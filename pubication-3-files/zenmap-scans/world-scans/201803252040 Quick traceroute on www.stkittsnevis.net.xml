@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1522028433" profile_name="Quick traceroute" xmloutputversion="1.04" scanner="nmap" version="7.70" startstr="Sun Mar 25 20:40:33 2018" args="nmap -sn --traceroute www.stkittsnevis.net"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.70 ( https://nmap.org ) at 2018-03-25 20:40 CDT
+Nmap scan report for www.stkittsnevis.net (104.168.146.70)
+Host is up (0.062s latency).
+rDNS record for 104.168.146.70: client-104-168-146-70.hostwindsdns.com
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   3.11 ms  HG6Box (192.168.1.1)
+2   ...
+3   12.64 ms dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com (96.34.56.125)
+4   13.81 ms crr02blvlil-bue-30.blvl.il.charter.com (96.34.76.221)
+5   20.88 ms bbr01blvlil-bue-110.blvl.il.charter.com (96.34.2.170)
+6   12.68 ms 38.140.99.113
+7   19.17 ms be2316.ccr21.mci01.atlas.cogentco.com (154.54.80.121)
+8   29.92 ms be3035.ccr21.den01.atlas.cogentco.com (154.54.5.89)
+9   38.92 ms be3037.ccr21.slc01.atlas.cogentco.com (154.54.41.145)
+10  59.30 ms be2085.ccr21.sea02.atlas.cogentco.com (154.54.2.197)
+11  61.28 ms be2895.rcr21.sea03.atlas.cogentco.com (154.54.83.170)
+12  59.53 ms te0-0-0-0.nr12.b022860-0.sea03.atlas.cogentco.com (154.24.50.210)
+13  ...
+14  65.14 ms client-104-168-130-129.hostwindsdns.com (104.168.130.129)
+15  67.43 ms client-104-168-146-70.hostwindsdns.com (104.168.146.70)
+
+Nmap done: 1 IP address (1 host up) scanned in 3.41 seconds
+</output><host comment=""><status state="up"></status><address addrtype="ipv4" vendor="" addr="104.168.146.70"></address><hostnames><hostname type="user" name="www.stkittsnevis.net"></hostname><hostname type="PTR" name="client-104-168-146-70.hostwindsdns.com"></hostname></hostnames><ports></ports><os></os><uptime lastboot="" seconds=""></uptime><tcpsequence index="" values="" difficulty=""></tcpsequence><ipidsequence values="" class=""></ipidsequence><tcptssequence values="" class=""></tcptssequence><trace port="" proto="icmp"><hop rtt="3.11" host="HG6Box" ipaddr="192.168.1.1" ttl="1"></hop><hop rtt="12.64" host="dtr02nstlmo-tge-0-2-0-2.nstl.mo.charter.com" ipaddr="96.34.56.125" ttl="3"></hop><hop rtt="13.81" host="crr02blvlil-bue-30.blvl.il.charter.com" ipaddr="96.34.76.221" ttl="4"></hop><hop rtt="20.88" host="bbr01blvlil-bue-110.blvl.il.charter.com" ipaddr="96.34.2.170" ttl="5"></hop><hop rtt="12.68" host="" ipaddr="38.140.99.113" ttl="6"></hop><hop rtt="19.17" host="be2316.ccr21.mci01.atlas.cogentco.com" ipaddr="154.54.80.121" ttl="7"></hop><hop rtt="29.92" host="be3035.ccr21.den01.atlas.cogentco.com" ipaddr="154.54.5.89" ttl="8"></hop><hop rtt="38.92" host="be3037.ccr21.slc01.atlas.cogentco.com" ipaddr="154.54.41.145" ttl="9"></hop><hop rtt="59.30" host="be2085.ccr21.sea02.atlas.cogentco.com" ipaddr="154.54.2.197" ttl="10"></hop><hop rtt="61.28" host="be2895.rcr21.sea03.atlas.cogentco.com" ipaddr="154.54.83.170" ttl="11"></hop><hop rtt="59.53" host="te0-0-0-0.nr12.b022860-0.sea03.atlas.cogentco.com" ipaddr="154.24.50.210" ttl="12"></hop><hop rtt="65.14" host="client-104-168-130-129.hostwindsdns.com" ipaddr="104.168.130.129" ttl="14"></hop><hop rtt="67.43" host="client-104-168-146-70.hostwindsdns.com" ipaddr="104.168.146.70" ttl="15"></hop></trace></host><runstats><finished timestr="Sun Mar 25 20:40:36 2018" time="1522028436"></finished><hosts down="0" total="1" up="1"></hosts></runstats></nmaprun>

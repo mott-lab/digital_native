@@ -1,15 +1,5 @@
-<<<<<<< HEAD
 function restartAnimations(){
   console.log("restartAnimations called");
-=======
-function restartThreadAnimation() {
-  console.log("restartThreadAnimation called.");
-  console.log("restartForkAnimation called.");
-  var container = document.getElementById("model-thread");
-  var content = container.innerHTML;
-  container.innerHTML = content;
-  console.log("Thread Animation refreshed.");
->>>>>>> 23c15da310858c3267ed51779fec46d5cf208561
   // var svgDoc = document.getElementById('model-thread');
   // svgDoc.forceRedraw();
   // svgDoc.clearInterval();
@@ -19,14 +9,6 @@ function restartThreadAnimation() {
   var content = container.innerHTML;
   container.innerHTML = content;
   console.log("refresh complete");
-}
-
-function restartForkAnimation() {
-  console.log("restartForkAnimation called.");
-  var container = document.getElementById("model-fork");
-  var content = container.innerHTML;
-  container.innerHTML = content;
-  console.log("Fork Animation refreshed.");
 }
 
 (function($){
