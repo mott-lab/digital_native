@@ -11,16 +11,16 @@
     <title>Digital_Native</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Cabin:700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css" >
 
     <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="../css/grayscale.min.css" rel="stylesheet">
 
   </head>
 
@@ -38,6 +38,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/index.html#about">Home</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/index.html#about">About</a>
             </li>
@@ -65,7 +68,7 @@
               </p>
               <br>
               <br>
-              <a href="/publications.html#pubs" class="btn btn-circle js-scroll-trigger">
+              <a href="#portfolio" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
             </div>
@@ -74,24 +77,8 @@
       </div>
     </header>
 
-    <!-- Publications -->
-    <!-- <section id="pubs" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Publications</h2>
-            <p>How might one attend?</p>
-          </div>
-          <div class ="col-md-4 col-sm-6 portfolio-item">
-
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Portfolio Grid -->
-    <section class="bg-dark" id="pubs">
-      <div class="container">
+    <section class="bg-dark" id="portfolio" >
+      <div class="container" style="padding-top: 25px">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Publications</h2>
@@ -101,91 +88,63 @@
         <div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
+              <div class="portfolio-hover" style="background: rgba(74, 228, 239, 0.7)">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <!-- <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt=""> -->
+              <img class="img-fluid" src="../img/pub-1-thumbnail.jpg" alt="">
             </a>
-            <div class="portfolio-caption">
-              <h4 style="margin-bottom: 10px;">pub#0</h4>
-              <p class="text-muted">APU</p>
+            <div class="portfolio-caption" style="background-color: #1b1e1c">
+              <h4 style="margin-bottom: 5px;">computing</h4>
+              <p class="text-muted">animation</p>
             </div>
           </div>
-          <!-- <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
+              <div class="portfolio-hover" style="background: rgba(74, 228, 239, 0.7)">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="../img/pub-2-thumbnail.jpg" alt="">
             </a>
-            <div class="portfolio-caption">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
+            <div class="portfolio-caption" style="background-color: #1b1e1c">
+              <h4 style="margin-bottom: 5px;">intelligence</h4>
+              <p class="text-muted">audio</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
+              <div class="portfolio-hover" style="background: rgba(74, 228, 239, 0.7)">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="../img/pub-3-thumbnail.jpg" alt="">
             </a>
-            <div class="portfolio-caption">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
+            <div class="portfolio-caption" style="background-color: #1b1e1c">
+              <h4 style="margin-bottom: 5px;">networking</h4>
+              <p class="text-muted">constellations</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
+              <div class="portfolio-hover" style="background: rgba(74, 228, 239, 0.7)">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="../img/pub-4-thumbnail.jpg" alt="">
             </a>
-            <div class="portfolio-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
+            <div class="portfolio-caption" style="background-color: #1b1e1c">
+              <h4 style="margin-bottom: 5px;">reality</h4>
+              <p class="text-muted">virtual</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
-            </div>
-          </div> -->
         </div>
       </div>
-    </section>
+</section>
 
     <!-- Footer -->
     <footer>
@@ -193,8 +152,6 @@
         <p>Copyright &copy; Matt Gottsacker 2018</p>
       </div>
     </footer>
-
-
 
     <!-- Portfolio Modals -->
 
@@ -216,8 +173,8 @@
                   <h4>Threaded || Forked</h4>
                   <!-- <p class="item-intro text-muted">How does attention work?</p> -->
                   <!-- <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt=""> -->
-                  <p class="item-intro text-muted">Attention functions as an autonomous, but programmable, processing unit.</p>
-                  <iframe id="iframe-1" src="pub_1_frame.html" width="100%" height="100%">
+                  <p>Attention functions as an autonomous, but programmable, processing unit.</p>
+                  <iframe id="iframe-1" src="./pub_1_frame.html" width="100%" height="150%">
                      Sorry, your browser does not support inline frames :-(
                   </iframe>
                   <ul class="list-inline">
@@ -237,7 +194,7 @@
     </div>
 
     <!-- Modal 2 -->
-    <!-- <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -267,7 +224,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- Modal 3 -->
     <!-- <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
@@ -404,18 +361,18 @@
 
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAt3DLyVvmfAD8dxV8GXZ92OOjN3uanzA0"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
-    <script src="js/pub_1.min.js"></script>
+    <script src="../js/grayscale.min.js"></script>
+    <script src="../js/pub_1.min.js"></script>
 
   </body>
 

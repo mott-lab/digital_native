@@ -1,0 +1,91 @@
+<svg id="model-thread" xmlns="https://www.w3.org/2000/svg" align="center" width="400px" height="400px" viewBox="0 0 400 400">
+
+  <text visibility="hidden" x="5" y="15" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:3s">
+    time
+  </text>
+
+  <!-- time line -->
+  <path class="path"id="draw-time" fill="none" stroke-width="3" style="stroke:blue; animation-delay:4s; marker-end:url(#arrow-time);"
+  d="M 0,0 V 300" />
+  <path class="dashed" id="draw-time-black" fill="none" stroke-width="3" style="stroke:black; animation-delay:4s;"
+  d="M 0,0 V 300" />
+
+  <!-- initial process -->
+  <path id="draw-10" fill="none" stroke="green" stroke-width="3" style="animation-delay:4s;"
+  d="M 100,0 V 50" />
+
+  <text visibility="hidden" x="105" y="10" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:4s">
+    P1
+  </text>
+
+  <text visibility="hidden" x="105" y="50" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:6s">
+    thread()
+  </text>
+
+  <!-- split right -->
+  <path id="right-1" fill="none" stroke="green" stroke-width="3" style="animation-delay:6s;"
+  d="M 100,50 L 150,100" />
+
+  <text visibility="hidden" x="155" y="100" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:8s">
+    T3
+  </text>
+
+  <!-- split left -->
+  <path id="left-1" fill="none" stroke="green" stroke-width="3" style="animation-delay:6s;"
+  d="M 100,50 L 50,100" />
+
+  <text visibility="hidden" x="55" y="100" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:8s">
+    T2
+  </text>
+
+  <!-- middle -->
+  <path id="mid-1" fill="none" stroke="green" stroke-width="3" style="animation-delay:5.5s;"
+  d="M 100,50 L 100,100" />
+
+  <text visibility="hidden" x="105" y="100" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:6s">
+    T1
+  </text>
+
+  <!-- marker for division -->
+  <circle visibility="hidden" cx="100" cy="50" r="5" style="stroke: black; fill: red; animation-delay:5s"/>
+
+  <!-- right straight down -->
+  <path id="right-2" fill="none" stroke="green" stroke-width="3" style="animation-delay:8s;"
+  d="M 150,100 L 150,200" />
+
+  <!-- left straight down -->
+  <path id="left-2" fill="none" stroke="green" stroke-width="3" style="animation-delay:8s;"
+  d="M 50,100 L 50,200" />
+
+  <!-- middle down again -->
+  <path id="mid-2" fill="none" stroke="green" stroke-width="3" style="animation-delay:8s;"
+  d="M 100,100 L 100,200" />
+
+  <!-- right join to mid -->
+  <path id="right-3" fill="none" stroke="green" stroke-width="3" style="animation-delay:10s;"
+  d="M 150,200 L 100,250" />
+
+  <!-- left join to mid -->
+  <path id="left-3" fill="none" stroke="green" stroke-width="3" style="animation-delay:10s;"
+  d="M 50,200 L 100,250" />
+
+  <!-- mid join with others -->
+  <path id="mid-3" fill="none" stroke="green" stroke-width="3" style="animation-delay:10s;"
+  d="M 100,200 L 100,250" />
+
+  <text visibility="hidden" x="105" y="250" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:11s">
+    join()
+  </text>
+
+  <!-- all three down together -->
+  <path id="draw-12" fill="none" stroke="green" stroke-width="3" style="animation-delay:12s;"
+  d="M 100,250 L 100,300" />
+
+  <!-- marker for connection -->
+  <circle visibility="hidden" cx="100" cy="250" r="5" style="stroke: black; fill: red; animation-delay:12s"/>
+
+  <text visibility="hidden" x="105" y="300" font-family="Ubuntu" font-size="12" fill="white" style="animation-delay:14s">
+    P1
+  </text>
+
+</svg>
